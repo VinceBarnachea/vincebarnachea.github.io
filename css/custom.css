@@ -6,9 +6,31 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Magical';
+    src: url('../fonts/MagicalStylishSansSerifDemo.woff') format('woff'), url('../fonts/MagicalStylishSansSerifDemo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 :root {
-    --white: #f2f2f2;
+    --white: #fff;
     --black: #111113;
+    --pink: #b0e0e9;
+    --darkblue: #090a1a;
+    --blue: #647bff;
 }
 
 nav {
@@ -39,12 +61,12 @@ nav .links li {
 nav .links a,
 .header-line {
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
     font-family: 'Source Sans Pro';
     font-weight: bold;
     font-size: 1.2rem;
     font-weight: 100;
-    filter: drop-shadow(-2px 0 2px white);
+    /* filter: drop-shadow(-2px 0 2px white); */
 }
 
 nav .links a:hover,
@@ -75,21 +97,66 @@ nav .icon-burger .line {
 }
 
 .section-one {
-    background: var(--white);
     height: 100vh;
+    width: 100%;
+}
+
+.home-container {
+    height: 100%;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-video {
     width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Magical';
+    color: var(--white);
+    font-weight: 400;
+    font-size: 7rem;
+    transition: 0.5s ease-in-out;
+    width: 50%;
+}
+
+h1:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+h2,
+h3 {
+    font-family: 'Poppins';
+    color: var(--white);
+    font-weight: 200;
+    font-size: 4rem;
 }
 
 .section-two {
-    background: yellow;
     height: 100vh;
-    width: 100vw;
-}
-
-.section-three {
-    background: red;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    background: var(--white);
 }
 
 @media only screen and (max-width: 850px) {

@@ -37,6 +37,9 @@ body {
     --blue: #647bff;
 }
 
+
+/* Nav =============================================================================================================================================== */
+
 nav {
     position: fixed;
     z-index: 30;
@@ -102,11 +105,20 @@ nav .icon-burger .line {
 
 .section-one,
 .section-two,
-.section-three {
+.section-three,
+.section-four,
+.section-five,
+.section-six,
+.section-seven,
+.section-eight {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+
+/* Section One =============================================================================================================================================== */
 
 .section-one {
     height: 100vh;
@@ -145,18 +157,30 @@ nav .icon-burger .line {
     color: var(--black);
 }
 
+
+/* Section Two =============================================================================================================================================== */
+
 .section-two {
     height: 100vh;
     width: 100%;
     background: var(--darkblue);
 }
 
-.section-two-container {
+.section-two-container-one {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 100%;
     align-items: end;
+    justify-content: center;
+}
+
+.section-two-container-two {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: start;
     justify-content: center;
 }
 
@@ -168,7 +192,7 @@ nav .icon-burger .line {
 }
 
 .about-me-par {
-    padding: 20px;
+    padding: 20px 0;
     font-family: 'Poppins';
     font-size: 1.2rem;
     font-weight: 100;
@@ -177,10 +201,149 @@ nav .icon-burger .line {
     color: var(--white);
 }
 
+.about-me-par-2 {
+    padding: 20px 0;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 50%;
+    text-align: left;
+    color: var(--white);
+}
+
+
+/* Section Three =============================================================================================================================================== */
+
 .section-three {
     height: 100vh;
     width: 100%;
     background: var(--white);
+}
+
+.section-three-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--black);
+}
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    margin: 2% 0;
+    border-radius: 25px;
+    box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
+}
+
+.languages-container,
+.databases-container,
+.platform-container,
+.software-container {
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%); */
+}
+
+.language-header,
+.database-header,
+.platform-header,
+.software-header {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.skills-container-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.skills-contents {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+
+/* Section Four =============================================================================================================================================== */
+
+.section-four {
+    height: 100vh;
+    width: 100%;
+    background: var(--darkblue);
+}
+
+
+/* Section Five =============================================================================================================================================== */
+
+.section-five {
+    height: 100vh;
+    width: 100%;
+    background: var(--white);
+}
+
+
+/* Section Six =============================================================================================================================================== */
+
+.section-six {
+    height: 100vh;
+    width: 100%;
+    background: url('/assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-six-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section-six-header {
+    font-family: 'Magical';
+    font-weight: 400;
+    font-size: 5rem;
+    color: var(--white);
+}
+
+
+/* Section Seven =============================================================================================================================================== */
+
+.section-seven {
+    height: 100vh;
+    width: 100%;
+    background: var(--white);
+}
+
+
+/* Section Eight =============================================================================================================================================== */
+
+.section-eight {
+    height: 100vh;
+    width: 100%;
+    background: var(--darkblue);
 }
 
 @media only screen and (max-width: 850px) {

@@ -20,6 +20,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -29,7 +33,7 @@ body {
     --white: #fff;
     --black: #111113;
     --pink: #b0e0e9;
-    --darkblue: #090a1a;
+    --darkblue: #00003b;
     --blue: #647bff;
 }
 
@@ -61,7 +65,7 @@ nav .links li {
 nav .links a,
 .header-line {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     font-family: 'Source Sans Pro';
     font-weight: bold;
     font-size: 1.2rem;
@@ -96,64 +100,84 @@ nav .icon-burger .line {
     transition: all .4s ease-in-out;
 }
 
+.section-one,
+.section-two,
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section-one {
     height: 100vh;
     width: 100%;
+    background: var(--white);
 }
 
-.home-container {
-    height: 100%;
-    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-content {
+.section-one-container {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.bg-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-h1 {
+.header {
     font-family: 'Magical';
-    color: var(--white);
-    font-weight: 400;
-    font-size: 7rem;
-    transition: 0.5s ease-in-out;
-    width: 50%;
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--black);
 }
 
-h1:hover {
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
+.header-name {
+    font-family: 'Magical';
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--black);
 }
 
-h2,
-h3 {
-    font-family: 'Poppins';
-    color: var(--white);
-    font-weight: 200;
-    font-size: 4rem;
+.header-tag {
+    margin: 15px 0;
+    font-family: 'Magical';
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--black);
 }
 
 .section-two {
+    height: 100vh;
+    width: 100%;
+    background: var(--darkblue);
+}
+
+.section-two-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: end;
+    justify-content: center;
+}
+
+.about-me-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.about-me-par {
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 100;
+    width: 50%;
+    text-align: right;
+    color: var(--white);
+}
+
+.section-three {
     height: 100vh;
     width: 100%;
     background: var(--white);

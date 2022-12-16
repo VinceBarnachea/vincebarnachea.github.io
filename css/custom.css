@@ -121,6 +121,8 @@ nav .icon-burger .line {
 /* Section One =============================================================================================================================================== */
 
 .section-one {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--white);
@@ -161,6 +163,8 @@ nav .icon-burger .line {
 /* Section Two =============================================================================================================================================== */
 
 .section-two {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--darkblue);
@@ -215,6 +219,8 @@ nav .icon-burger .line {
 /* Section Three =============================================================================================================================================== */
 
 .section-three {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--white);
@@ -286,29 +292,144 @@ nav .icon-burger .line {
 /* Section Four =============================================================================================================================================== */
 
 .section-four {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--darkblue);
+}
+
+.section-four-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    padding: 5% 0;
+}
+
+.projects-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--white);
 }
 
 
 /* Section Five =============================================================================================================================================== */
 
 .section-five {
-    height: 100vh;
+    position: relative;
+    z-index: 1;
+    height: auto;
     width: 100%;
     background: var(--white);
+}
+
+.section-five-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    padding: 5% 0;
+}
+
+.resume-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 3%;
+}
+
+.experience-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
+    padding: 3% 0;
+    padding-right: 3%;
+}
+
+.experience-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-header {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.experience-all-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.experience-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
+    width: 100%;
+    margin: 15px 0;
+}
+
+.experience-list-header {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--black);
+    padding-bottom: 10px;
+}
+
+.experience-list-position,
+.experience-list-location,
+.experience-list-date {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.breakline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.hr {
+    height: 1px;
+    width: 80%;
+    background: var(--black);
 }
 
 
 /* Section Six =============================================================================================================================================== */
 
 .section-six {
+    position: relative;
+    z-index: 1;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: url('/assets/bg.png');
     background-position: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
 }
 
@@ -332,19 +453,62 @@ nav .icon-burger .line {
 /* Section Seven =============================================================================================================================================== */
 
 .section-seven {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--white);
+    margin-bottom: 50vh;
+}
+
+.section-seven-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    padding: 5% 0;
+}
+
+.certificate-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--black);
 }
 
 
 /* Section Eight =============================================================================================================================================== */
 
 .section-eight {
-    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    height: 50vh;
     width: 100%;
     background: var(--darkblue);
 }
+
+.section-eight-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    padding: 5% 0;
+}
+
+.contact-header {
+    font-family: 'Magical';
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+
+/* ================================================================================================================================================================= */
 
 @media only screen and (max-width: 850px) {
     nav .links {

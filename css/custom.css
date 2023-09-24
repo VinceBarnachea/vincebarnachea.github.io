@@ -174,7 +174,6 @@ nav .icon-burger .line {
 .section-two {
     position: relative;
     z-index: 1;
-    height: 100vh;
     width: 100%;
     background: var(--darkblue);
 }
@@ -182,16 +181,17 @@ nav .icon-burger .line {
 .section-two-container-one {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     height: 100%;
     align-items: end;
     justify-content: center;
+    margin: 0 0 5% 0;
 }
 
 .section-two-container-two {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     height: 100%;
     align-items: start;
     justify-content: center;
@@ -205,23 +205,46 @@ nav .icon-burger .line {
 }
 
 .about-me-par {
-    padding: 20px 0;
+    padding: 20px 0 0;
     font-family: 'Poppins';
     font-size: 1.2rem;
     font-weight: 100;
-    width: 50%;
+    width: 80%;
     text-align: right;
     color: var(--white);
 }
 
 .about-me-par-2 {
-    padding: 20px 0;
+    padding: 20px 0 0;
     font-family: 'Poppins';
     font-size: 1.2rem;
     font-weight: 100;
-    width: 50%;
+    width: 80%;
     text-align: left;
     color: var(--white);
+}
+.col-about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.col-dsc-about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.col-my-image-container,.col-dsc-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-my-image,.col-dsc-image{
+    height: 100%;
+    width: 60%;
+    border-radius: 25px;
+    object-fit: contain;
 }
 
 
@@ -230,7 +253,6 @@ nav .icon-burger .line {
 .section-three {
     position: relative;
     z-index: 1;
-    height: 100vh;
     width: 100%;
     background: var(--white);
 }
@@ -243,11 +265,21 @@ nav .icon-burger .line {
     align-items: center;
     justify-content: center;
 }
-
+.skills-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .skills-header {
     font-family: 'Magical';
     font-size: 3rem;
     font-weight: 300;
+    color: var(--black);
+}
+.skills-logo{
+    font-size: 1.7rem;
+    margin: 0 0 5px 0;
     color: var(--black);
 }
 
@@ -264,7 +296,7 @@ nav .icon-burger .line {
 .databases-container,
 .platform-container,
 .software-container {
-    padding: 2% 0;
+    padding: 3% 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -279,13 +311,14 @@ nav .icon-burger .line {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.5rem;
+    margin: 0 0 25px 0;
 }
 
 .skills-container-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     height: 100%;
     width: 100%;
 }
@@ -295,6 +328,7 @@ nav .icon-burger .line {
     font-size: 1rem;
     font-weight: 400;
     color: var(--black);
+    margin: 0 0 20px 0;
 }
 
 
@@ -303,7 +337,7 @@ nav .icon-burger .line {
 .section-four {
     position: relative;
     z-index: 1;
-    height: 100vh;
+
     width: 100%;
     background: var(--darkblue);
 }
@@ -393,13 +427,20 @@ nav .icon-burger .line {
     width: 100%;
     margin: 15px 0;
 }
+.experience-list-container h4{
+    padding-bottom: 5px;
+}
+
+.experience-list-container h4:last-of-type{
+    padding-bottom: 0px;
+}
 
 .experience-list-header {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--black);
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .experience-list-position,
@@ -462,7 +503,6 @@ nav .icon-burger .line {
 .section-seven {
     position: relative;
     z-index: 1;
-    height: 100vh;
     width: 100%;
     background: var(--white);
     margin-bottom: 50vh;

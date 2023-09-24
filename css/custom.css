@@ -27,6 +27,7 @@ html {
 html,
 body {
     overflow-x: hidden;
+    font-family: 'Poppins';
 }
 
 :root {
@@ -109,12 +110,20 @@ nav .icon-burger .line {
 .section-four,
 .section-five,
 .section-six,
-.section-seven,
-.section-eight {
+.section-seven {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5%;
+}
+
+.section-eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 5%;
 }
 
 
@@ -245,7 +254,7 @@ nav .icon-burger .line {
 .skills-container {
     display: flex;
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin: 2% 0;
     border-radius: 25px;
     box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
@@ -306,7 +315,6 @@ nav .icon-burger .line {
     height: 100%;
     align-items: center;
     justify-content: start;
-    padding: 5% 0;
 }
 
 .projects-header {
@@ -334,7 +342,6 @@ nav .icon-burger .line {
     height: 100%;
     align-items: center;
     justify-content: start;
-    padding: 5% 0;
 }
 
 .resume-header {
@@ -424,10 +431,10 @@ nav .icon-burger .line {
 
 .section-six {
     position: relative;
-    z-index: 1;
+    z-index: 99;
     height: 100vh;
     width: 100vw;
-    background: url('/assets/bg.png');
+    background-image: url('https://vincebarnachea.github.io/assets/bg.png');
     background-position: center;
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
@@ -468,7 +475,6 @@ nav .icon-burger .line {
     height: 100%;
     align-items: center;
     justify-content: start;
-    padding: 5% 0;
 }
 
 .certificate-header {
@@ -485,7 +491,6 @@ nav .icon-burger .line {
     position: fixed;
     bottom: 0;
     z-index: 0;
-    height: 50vh;
     width: 100%;
     background: var(--darkblue);
 }
@@ -493,11 +498,10 @@ nav .icon-burger .line {
 .section-eight-container {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: start;
-    padding: 5% 0;
 }
 
 .contact-header {
@@ -505,6 +509,96 @@ nav .icon-burger .line {
     font-size: 3rem;
     font-weight: 300;
     color: var(--white);
+    margin-bottom: 3%;
+}
+
+.contact-row{
+    width: 100%;
+}
+
+.gmail-header,.get-in-touch-header{
+    color: var(--white);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.gmail-address-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.get-in-touch-icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.get-in-touch-icons-container a{
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 5px 0;
+    transition: all ease-in-out 0.3s;
+}
+.get-in-touch-icons-container a:hover{
+    background: var(--white);
+}
+.get-in-touch-icons-container a:hover .get-icon{
+    color: var(--darkblue);
+}
+.gmail-icon{
+    font-size: 1.1rem;
+    color: white;
+}
+.gmail-address{
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 0 10px;
+}
+
+.get-icon{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+}
+.all-rights-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+.all-rights-reserved{
+    color: var(--white);
+    font-size: 0.9rem;
+}
+/* Progress Bar */
+
+.progress-bar-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 10px;
+}
+
+.progress-bar{
+    width: 0;
+    height: 100%;
+    background: #ccc;
+    transition: all ease-in-out 0.5s;
 }
 
 

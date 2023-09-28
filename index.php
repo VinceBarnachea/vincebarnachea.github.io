@@ -355,7 +355,7 @@
             </div>
 
             <div class="all-rights-container">
-                <span class="all-rights-reserved"><?php echo date('Y')?> - John Vincent Barnachea Website Portfolio &copy; All rights reserved.</span>
+                <span class="all-rights-reserved"><?php echo date('Y')?> - John Vincent Barnachea Website Portfolio PHP &copy; All rights reserved.</span>
             </div>
         </div>
     </footer>

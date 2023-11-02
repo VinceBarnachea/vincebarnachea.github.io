@@ -5,13 +5,25 @@ jQuery( window ).on("load", function() {
         'margin-bottom' : footerHeight
     });  
 
+    jQuery('.section-two').css({
+        'margin-top' : '100vh'
+    });  
+    setTimeout(function () {
+        $('.front-black').css({
+             'left': '0'
+        });
+
+ 
+     }, 10);
     setTimeout(function () {
        $('.navbar').css({
             'top': '0'
        });
 
+       
+
      
-    }, 10);
+    }, 1000);
 
     setTimeout(function () {
 
@@ -19,8 +31,9 @@ jQuery( window ).on("load", function() {
              'opacity' : '1',
              'transform': 'translateY(0)'
         });
+        
       
-     }, 70);
+     }, 1070);
 
      setTimeout(function () {
 
@@ -28,8 +41,19 @@ jQuery( window ).on("load", function() {
              'opacity' : '1',
              'transform': 'translateY(0)'
         });
+  
       
-     }, 100);
+     }, 2000);
+
+
+     setTimeout(function () {
+
+        $('.front-my-image').css({
+            'height': '80%'
+       });
+  
+      
+     }, 1700);
 
 
 });
@@ -70,6 +94,9 @@ $(document).ready(function() {
         }
 
         if(scrollTop > jQuery('.section-six').offset().top - (jQuery(window).height()/1.1)){
+            $('.section-one').css({
+                'visibility':'hidden'
+            });
             var $sections = $('.section-six');
             var $window = $(window);
             var windowHeight = $window.height();
@@ -87,5 +114,15 @@ $(document).ready(function() {
                 'right' : scrollPercentage +'%'
             });
         }
+        else{
+            $('.section-one').css({
+                'visibility':'visible'
+            });
+        }
+    });
+
+    var $body = $('body, html');
+    $('#home-nav').click(function() {
+        $body.animate({ scrollTop: 0 }, '1500');
     });
 });

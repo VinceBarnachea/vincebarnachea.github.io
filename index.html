@@ -17,6 +17,7 @@
     <!-- Local -->
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/script.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
 
 <header>
@@ -25,7 +26,7 @@
         <ul class="links">
             <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
-                    <a href="#home" class="nav-residential">Home</a>
+                    <a href="#home" id="home-nav" class="nav-residential">Home</a>
                 </div>
             </li>
 
@@ -99,44 +100,156 @@
             </div>
 
             <div class="front-soc-icon flex justify-between items-center gap-4 mt-8">
-                <a href="https://www.facebook.com/Binsuuuuuu" target="_blank"><i class="fa-brands fa-facebook-f text-white w-8 get-icon-front"></i></a>
-                <a href="https://www.instagram.com/_binsuu/" target="_blank"><i class="fa-brands fa-instagram text-white w-8 get-icon-front"></i></a>
-                <a href="https://www.linkedin.com/in/john-vincent-barnachea/" target="_blank"><i class="fa-brands fa-linkedin-in text-white w-8 get-icon-front"></i></a>
-                <a href="https://github.com/VinceBarnachea" target="_blank"><i class="fa-brands fa-github text-white w-8 get-icon-front"></i></a>
+                <a class = "h-10 w-10" href="https://www.facebook.com/Binsuuuuuu" target="_blank"><i class="fa-brands fa-facebook-f text-white w-full h-full get-icon-front"></i></a>
+                <a class = "h-10 w-10" href="https://www.instagram.com/_binsuu/" target="_blank"><i class="fa-brands fa-instagram text-white w-full h-full get-icon-front"></i></a>
+                <a class = "h-10 w-10" href="https://www.linkedin.com/in/john-vincent-barnachea/" target="_blank"><i class="fa-brands fa-linkedin-in text-white w-full h-full get-icon-front"></i></a>
+                <a class = "h-10 w-10" href="https://github.com/VinceBarnachea" target="_blank"><i class="fa-brands fa-github text-white w-full h-full get-icon-front"></i></a>
             </div>
         </div>
+
+        <div class="front-black h-full absolute">
+            <div class="front-my-image absolute"></div>
+        </div>
+
     </section>
     <section class="section-two" id="about">
-        <div class="section-two-container-one">
-            <div class="row">
-                <div class="col-lg-5 col-my-image-container">
-                    <img class = "col-my-image" src="assets/me.webp" alt="" srcset="">
-                </div>
-                <div class="col-lg-7 col-about-container">
-                    <h2 class="about-me-header">About Me</h2>
-                    <p class="about-me-par">Hello ! I'm <b>John Vincent Barnachea</b>, a graduate of <b>BSIT major in System Development</b> at <b>PHINMA-University of Pangasinan</b>, a passionate developer who wants to never stop learning new things and has a almost 2 years work experience
-                        in Wordpress Development.</p>
-                </div>
+        <div class="section-two-container w-full h-full flex flex-col items-center">
+            <div class="about-header-container flex justify-center items-center">
+                <h2 class="about-us-header text-white mb-8">About Me</h2>
             </div>
-           
+            <div class="about-contents-container flex flex-col max-w-none lg:max-w-screen-lg justify-center items-end">
+                <p class="text-sm lg:text-md text-white pb-4 leading-loose">Hello! I'm John Vincent Barnachea, a graduate of BSIT major in System Development at PHINMA-University of Pangasinan. I'm a passionate developer who never stops learning new things, and I have almost 2 years of work experience in WordPress development.</p>
+                <p class="text-sm lg:text-md text-white leading-loose">In October 2020, I was assigned as an Operations Team Manager at Google Developer Student Club PHINMA UPang. Powered by Google Developers, it is a group of students from PHINMA University of Pangasinan whose aim is to bridge the gap between theory and practical application for student developers. Alongside the 1,266+ other GDSC chapters in 106 countries around the world, it is part of a global community supported by Google Developers. GDSC PHINMA UPang is also the only university-wide organization in PHINMA UPang that is officially recognized by Google. This community that I started has successfully organized multiple events to help aspiring developers get to know and learn about the different Google developer technologies available to them.</p>
+            </div>
         </div>
-        <div class="section-two-container-two">
-            <div class="row">
-                <div class="col-lg-7 col-dsc-about-container">
-                    <h2 class="about-me-header">Google Developer Student Clubs</h2>
-                    <p class="about-me-par-2">On October, 2020, Assigned me as a Operations Team Manager at Google Developer Student Club PHINMA UPang. Powered by Google Developers, it is a group of students from PHINMA University of Pangasinan whose aim is to bridge the gap between theory
-                        and practical application for student developers. Together with the 1,266+ other GDSC chapters in 106 countries around the world, it is part of a global community that is supported by Google Developers. GDSC PHINMA UPang is also the only
-                        university-wide organization in PHINMA UPang that is officially recognized by Google. This community that I started is successfully organized multiple events that help aspiring developers get to know and learn the different Google developer
-                        technologies available to them.</p>
-                </div>
-                <div class="col-lg-5 col-dsc-image-container">
-                    <img class="col-dsc-image" src="assets/dsc.png" alt="" srcset="">
+    </section>
+
+    <section class="section-three" id="skills">
+        <div class="skills-header black-text">
+            Skills
+        </div>
+
+        <div class="skills-containers max-w-none lg:max-w-screen-lg gap-16 lg:gap-8 py-8 w-full">
+            <div class="skills-wrapper h-full w-full">
+                <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
+                    <h6 class="skills-title text-xl lg:text-xl black-text">
+                        <lord-icon
+                                src="https://cdn.lordicon.com/wluyqhxh.json"
+                                trigger="loop"
+                                delay="500"
+                                colors="primary:#111113"
+                                style="width:50px;height:50px">
+                        </lord-icon>
+                        <h2 class="language-header">Languages</h2>
+                        <p class="skill-description text-sm black-text text-center pb-8">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </h6>
+    
+                    <div class="skills-row-2 w-full">
+                        <div class="skills-row-list-container flex flex-col items-center justify-start gap-8">
+                            <h6 class="black-text text-md">Java</h6>
+                            <h6 class="black-text text-md">Javascript</h6>
+                            <h6 class="black-text text-md">PHP</h6>
+                            <h6 class="black-text text-md">Python</h6>
+                            <h6 class="black-text text-md">VB.net</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="skills-wrapper h-full w-full">
+                <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
+                    <h6 class="skills-title text-xl lg:text-xl black-text">
+                        <lord-icon
+                                src="https://cdn.lordicon.com/ochimkct.json"
+                                trigger="loop"
+                                delay="500"
+                                colors="primary:#111113"
+                                style="width:50px;height:50px">
+                        </lord-icon>
+                        <h2 class="language-header">Database</h2>
+                        <p class="skill-description text-sm black-text text-center pb-8">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </h6>
+    
+                    <div class="skills-row-2 w-full">
+                        <div class="skills-row-list-container flex flex-col items-center justify-start gap-8">
+                            <h6 class="black-text text-md">PHPMyAdmin</h6>
+                            <h6 class="black-text text-md">MySQL</h6>
+                            <h6 class="black-text text-md">MS Access Database</h6>
+                            <h6 class="black-text text-md">Firebase</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-wrapper h-full w-full">
+                <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
+                    <h6 class="skills-title text-xl lg:text-xl black-text">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/jvucoldz.json"
+                            trigger="loop"
+                            delay="500"
+                            colors="primary:#111113"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <h2 class="language-header">Platform</h2>
+                        <p class="skill-description text-sm black-text text-center pb-8">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </h6>
+    
+                    <div class="skills-row-2 w-full">
+                        <div class="skills-row-list-container flex flex-col items-center justify-start gap-8">
+                            <h6 class="black-text text-md">Web</h6>
+                            <h6 class="black-text text-md">Android</h6>
+                            <h6 class="black-text text-md">Windows</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+          
+            
+
+
+            <div class="skills-wrapper h-full w-full">
+                <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
+                    <h6 class="skills-title text-xl lg:text-xl black-text">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/hbigeisx.json"
+                            trigger="loop"
+                            delay="500"
+                            stroke="500"
+                            colors="primary:#111113"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <h2 class="language-header">Framework / Software Tools</h2>
+                        <p class="skill-description text-sm black-text text-center pb-8">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    </h6>
+    
+                    <div class="skills-row-2 w-full">
+                        <div class="skills-row-list-container flex flex-col items-center justify-start gap-8">
+                            <h3 class="black-text text-md">Adobe XD</h3>
+                            <h3 class="black-text text-md">Adobe Photoshop</h3>
+                            <h3 class="black-text text-md">VS Code</h3>
+                            <h3 class="black-text text-md">XAMPP Server</h3>
+                            <h3 class="black-text text-md">Github</h3>
+                            <h3 class="black-text text-md">Wordpress</h3>
+                            <h3 class="black-text text-md">WooCommerce</h3>
+                            <h3 class="black-text text-md">jQuery</h3>
+                            <h3 class="black-text text-md">Flexboxgrid</h3>
+                            <h3 class="black-text text-md">Tailwind</h3>
+                            <h3 class="black-text text-md">Xcode</h3>
+                            <h3 class="black-text text-md">Visual Studio</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
            
         </div>
     </section>
-    <section class="section-three" id="skills">
+
+    <!-- <section class="section-three" id="skills">
         <div class="section-three-container">
             <h2 class="skills-header">What can I do</h2>
             <div class="row skills-container px-6 py-6">
@@ -231,7 +344,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -244,7 +357,7 @@
 
     <section class="section-five" id="resume">
         <div class="section-five-container">
-            <h2 class="resume-header">My Resume</h2>
+            <h2 class="resume-header">Resume</h2>
             <div class="experience-container row">
                 <div class="experience-header-container col-lg-3">
                     <h3 class="experience-header">Experience</h3>

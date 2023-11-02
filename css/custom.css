@@ -182,11 +182,17 @@ nav .icon-burger .line {
 /* Section One =============================================================================================================================================== */
 
 .section-one {
-    position: relative;
+    position: fixed;
     z-index: 1;
     height: 100vh;
     width: 100%;
     background: var(--white);
+}
+.front-black{
+    background: var(--black);
+    width: 30%;
+    left: -50%;
+    transition: all 1.5s ease-in-out;
 }
 .front-soc-icon{
     opacity: 0;
@@ -195,15 +201,18 @@ nav .icon-burger .line {
 }
 .front-soc-icon a{
     background: var(--black);
-    padding: 0 5px;
+    padding: 10px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section-one-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    align-items: start;
+    align-items: end;
     justify-content: center;
 }
 .front-cta-container{
@@ -214,7 +223,7 @@ nav .icon-burger .line {
 
 .header-hello {
     font-family: 'Poppins';
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 100;
     color: var(--black);
     opacity: 0;
@@ -224,7 +233,7 @@ nav .icon-burger .line {
 
 .header-name {
     font-family: 'Poppins';
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 600;
     color: var(--black);
 }
@@ -236,6 +245,20 @@ nav .icon-burger .line {
     color: var(--black);
 }
 
+.front-my-image{
+    background-image: url('../assets/me.webp');
+    border-radius: 15px;
+     background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50%;
+    transition: all 1.3s ease-in-out;
+}
 
 /* Section Two =============================================================================================================================================== */
 
@@ -243,7 +266,26 @@ nav .icon-burger .line {
     position: relative;
     z-index: 1;
     width: 100%;
-    background: var(--darkblue);
+    background-image: url('../assets/about.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.section-two-container{
+    position: relative;
+    z-index: 2;
 }
 
 .section-two-container-one {
@@ -265,7 +307,7 @@ nav .icon-burger .line {
     justify-content: center;
 }
 
-.about-me-header {
+.about-us-header {
     font-family: 'Magical';
     font-size: 3rem;
     font-weight: 400;
@@ -324,7 +366,13 @@ nav .icon-burger .line {
     width: 100%;
     background: var(--white);
 }
-
+.skills-containers{
+    columns: 2;
+}
+.skills-wrapper{
+    break-inside: avoid-column;
+    margin-bottom:2rem;
+}
 .section-three-container {
     display: flex;
     flex-direction: column;
@@ -338,6 +386,9 @@ nav .icon-burger .line {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.skills-row{
+    box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
 }
 .skills-header {
     font-family: 'Magical';
@@ -547,7 +598,15 @@ nav .icon-burger .line {
     /* background-repeat: no-repeat; */
     background-attachment: fixed;
 }
-
+.section-six::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
 .section-six-container {
     display: flex;
     flex-direction: column;
@@ -692,8 +751,7 @@ nav .icon-burger .line {
 }
 .get-icon-front{
     color: white;
-    font-size: 1.3rem;
-    padding: 10px;
+
     width: 45px;
     display: flex;
     justify-content: center;
@@ -743,6 +801,9 @@ nav .icon-burger .line {
 /* ================================================================================================================================================================= */
 
 @media only screen and (max-width: 850px) {
+    .skills-containers{
+        columns: 1;
+    }
     nav .links {
         float: none;
         position: fixed;

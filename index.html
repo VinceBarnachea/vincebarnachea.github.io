@@ -9,8 +9,11 @@
 
     <!-- CDN -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/4a11f77c0f.js" crossorigin="anonymous"></script>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Local -->
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/script.js"></script>
@@ -20,43 +23,44 @@
     <nav class="navbar">
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <ul class="links">
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#home" class="nav-residential">Home</a>
                 </div>
             </li>
 
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#about" class="nav-office">About</a>
                 </div>
             </li>
 
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#skills" class="nav-retail">Skills</a>
                 </div>
             </li>
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#projects" class="nav-retail">Projects</a>
                 </div>
             </li>
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#resume" class="nav-retail">Resume</a>
                 </div>
             </li>
-            <li class="mobile-nav-contact-container">
+            <li class="mobile-nav-contact-container ml-12">
                 <div class="mobile-nav-contact">
                     <a href="#certificates" class="nav-retail">Certificates</a>
                 </div>
             </li>
-            <li class="mobile-nav-contact-container">
-                <div class="mobile-nav-contact">
-                    <a href="#contact" class="nav-retail">Contact</a>
+
+            <a href="#contact" class="nav-retail flex w-max">
+                <div class="header-cta ml-12">
+                    Contact Me
                 </div>
-            </li>
+            </a>
 
             <div class="nav-hr-container">
                 <div class="nav-hr"></div>
@@ -69,15 +73,37 @@
             <div class="line"></div>
             <div class="line"></div>
         </label>
+        <div class="navbar-background absolute w-full h-full">
+
+        </div>
     </nav>
+   
 </header>
 
 <body>
     <section class="section-one" id="home">
         <div class="section-one-container">
-            <h2 class="header">Welcome I'm</h2>
-            <h1 class="header-name">John Vincent Barnachea</h1>
+            <h2 class="header-hello">Hello, I'm  <span class = "header-name">Vince</span></h2>
             <h2 class="header-tag">Frontend/Wordpress Developer</h2>
+            <div class="front-cta-container flex flex-row gap-8 mt-4">
+                <a href="#contact">
+                    <button class="px-12 py-3 front-cta-primary text-white">
+                        Contact Me
+                    </button>
+                </a>
+                <a href="#resume">
+                    <button class="px-12 py-3 front-cta-secondary black-text flex justify-center items-center gap-4">
+                        Resume <i class="bi bi-download flex"></i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="front-soc-icon flex justify-between items-center gap-4 mt-8">
+                <a href="https://www.facebook.com/Binsuuuuuu" target="_blank"><i class="fa-brands fa-facebook-f text-white w-8 get-icon-front"></i></a>
+                <a href="https://www.instagram.com/_binsuu/" target="_blank"><i class="fa-brands fa-instagram text-white w-8 get-icon-front"></i></a>
+                <a href="https://www.linkedin.com/in/john-vincent-barnachea/" target="_blank"><i class="fa-brands fa-linkedin-in text-white w-8 get-icon-front"></i></a>
+                <a href="https://github.com/VinceBarnachea" target="_blank"><i class="fa-brands fa-github text-white w-8 get-icon-front"></i></a>
+            </div>
         </div>
     </section>
     <section class="section-two" id="about">
@@ -113,7 +139,7 @@
     <section class="section-three" id="skills">
         <div class="section-three-container">
             <h2 class="skills-header">What can I do</h2>
-            <div class="row skills-container">
+            <div class="row skills-container px-6 py-6">
                 <div class="col-lg-3 languages-container">
                     <div class="skills-header-container">
                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -128,7 +154,7 @@
                     </div>
                     <div class="skills-container-contents">
                         <h3 class="skills-contents">Java</h3>
-                        <h3 class="skills-contents">JavaScript</h3>
+                        <h3 class="skills-contents">Javascript</h3>
 
                         <h3 class="skills-contents">PHP</h3>
                         <h3 class="skills-contents">Python</h3>
@@ -186,7 +212,7 @@
                             colors="primary:#111113"
                             style="width:50px;height:50px">
                         </lord-icon>
-                        <h2 class="software-header">Softwares Tools</h2>
+                        <h2 class="software-header">Framework/Softwares</h2>
                     </div>
                     <div class="skills-container-contents">
                         <h3 class="skills-contents">Adobe XD</h3>
@@ -196,6 +222,9 @@
                         <h3 class="skills-contents">Github</h3>
                         <h3 class="skills-contents">Wordpress</h3>
                         <h3 class="skills-contents">WooCommerce</h3>
+                        <h3 class="skills-contents">jQuery</h3>
+                        <h3 class="skills-contents">Flexboxgrid</h3>
+                        <h3 class="skills-contents">Tailwind</h3>
                         <h3 class="skills-contents">Xcode</h3>
                         <h3 class="skills-contents">Visual Studio</h3>
                     </div>
@@ -320,14 +349,190 @@
 
     <section class="section-six">
         <div class="section-six-container">
-            <h2 class="section-six-header">Never Stop Learning</h2>
+            <h2 id="never" class="section-six-header text-white">NEVER</h2>
+            <h2 id="stop" class="section-six-header text-white">STOP</h2>
+            <h2 id="learning" class="section-six-header text-white">LEARNING</h2>
         </div>
     </section>
 
     <section class="section-seven" id="certificates">
-        <div class="section-seven-container">
-            <h2 class="certificate-header">Certificates & Awards</h2>
-            <img src="" alt="" srcset="">
+        <div class="section-seven-container w-full h-full flex flex-col items-center justify-start ">
+            <h2 class="certificate-header mb-16">Certificates & Awards</h2>
+            
+            <div class="certificates-list-container grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/GDGPH2020Certificate_page-0001.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Google Developer Groud - Devfest 2020</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/COC-Barnachea_John_page-0001.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">A2 Design Lab Internship COC</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/GDSC.png" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Google Developer Student Club Core Team Member</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Study Jam1.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Useful tools that can help you in your project</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Study Jam1.png" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Developer Student Club</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Study Jam1_1.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Fetch API</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/dsc citesc.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">DSC PHINMA-UPang COA</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Kinobi.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Kinobi Resume Workshop COP</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/CODING.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Techno Olympics 2020 Coding Competition</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Jobseekers Guide.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Bagosphere Jobseeker's Guide</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Flutter.png" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Funky Flutter Workshop</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/firebase.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Firebase in Action Webinar</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/MS.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Software Development Management with MS Project</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Photography.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Intro to Photography and Videography: A beginners guide</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Study Jam1.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Useful tools that can help you in your project</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/SEMINAR.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Developing Android with Kotlin 1</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-container h-full">
+                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                        <img class = "w-full object-contain cert-image" src="cert/Study Jam1.jpg" alt="" srcset="">
+                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Certificate of Recognition Completing Level 2 Requirements</h6>
+                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
     </section>
     <div id="contact"></div>

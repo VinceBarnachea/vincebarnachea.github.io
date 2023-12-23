@@ -8,9 +8,15 @@
     <title>VinceBarnachea | Portfolio</title>
 
     <!-- CDN -->
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Flexbox Grid -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" integrity="sha512-YHuwZabI2zi0k7c9vtg8dK/63QB0hLvD4thw44dFo/TfBFVVQOqEG9WpviaEpbyvgOIYLXF1n7xDUfU3GDs0sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/4a11f77c0f.js" crossorigin="anonymous"></script>
     <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -24,7 +30,7 @@
     <nav class="navbar">
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <ul class="links">
-            <li class="mobile-nav-contact-container ml-12">
+            <li class="mobile-nav-contact-container ml-12 active">
                 <div class="mobile-nav-contact">
                     <a href="#home" id="home-nav" class="nav-residential">Home</a>
                 </div>
@@ -69,6 +75,7 @@
 
 
         </ul>
+        <div class="underline"></div>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -84,17 +91,17 @@
 <body>
     <section class="section-one" id="home">
         <div class="section-one-container">
-            <h2 class="header-hello">Hello, I'm  <span class = "header-name">Vince</span></h2>
+            <h2 class="header-hello">Hello! I'm  <span class = "header-name">Vince</span></h2>
             <h2 class="header-tag">Frontend/Wordpress Developer</h2>
             <div class="front-cta-container flex flex-row gap-8 mt-4">
                 <a href="#contact">
-                    <button class="px-12 py-3 front-cta-primary text-white">
+                    <button class="px-10 py-2 front-cta-primary text-white">
                         Contact Me
                     </button>
                 </a>
                 <a href="#resume">
-                    <button class="px-12 py-3 front-cta-secondary black-text flex justify-center items-center gap-4">
-                        Resume <i class="bi bi-download flex"></i>
+                    <button class="px-10 py-2 front-cta-secondary black-text flex justify-center items-center gap-4">
+                        Resume
                     </button>
                 </a>
             </div>
@@ -115,23 +122,24 @@
     <section class="section-two" id="about">
         <div class="section-two-container w-full h-full flex flex-col items-center">
             <div class="about-header-container flex justify-center items-center">
-                <h2 class="about-us-header text-white mb-8">About Me</h2>
+                <h2 class="about-us-header text-white mb-8 relative">About Me<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
             </div>
             <div class="about-contents-container flex flex-col max-w-none lg:max-w-screen-lg justify-center items-end">
-                <p class="text-sm lg:text-md text-white pb-4 leading-loose">Hello! I'm John Vincent Barnachea, a graduate of BSIT major in System Development at PHINMA-University of Pangasinan. I'm a passionate developer who never stops learning new things, and I have almost 2 years of work experience in WordPress development.</p>
-                <p class="text-sm lg:text-md text-white leading-loose">On October 2020, I was assigned as Operations Team Manager at Google Developer Student Club PHINMA UPang. Powered by Google Developers, it is a group of students from PHINMA University of Pangasinan whose aim is to bridge the gap between theory and practical application for student developers. Alongside the 1,266+ other GDSC chapters in 106 countries around the world, it is part of a global community supported by Google Developers. GDSC PHINMA UPang is also the only university-wide organization in PHINMA UPang that is officially recognized by Google. This community that I started has successfully organized multiple events to help aspiring developers get to know and learn about the different Google developer technologies available to them.</p>
+                <p data-aos="fade-up" class="aos-init text-sm lg:text-md text-white pb-4 leading-loose">Hello! I'm John Vincent Barnachea, a graduate of BSIT major in System Development at PHINMA-University of Pangasinan. I'm a passionate developer who never stops learning new things, and I have almost 2 years of work experience in WordPress development.</p>
+                <p data-aos="fade-up"  data-aos-duration="3000" class="aos-inittext-sm lg:text-md text-white leading-loose">On October 2020, I was assigned as Operations Team Manager at Google Developer Student Club PHINMA UPang. Powered by Google Developers, it is a group of students from PHINMA University of Pangasinan whose aim is to bridge the gap between theory and practical application for student developers. Alongside the 1,266+ other GDSC chapters in 106 countries around the world, it is part of a global community supported by Google Developers. GDSC PHINMA UPang is also the only university-wide organization in PHINMA UPang that is officially recognized by Google. This community that I started has successfully organized multiple events to help aspiring developers get to know and learn about the different Google developer technologies available to them.</p>
             </div>
         </div>
     </section>
 
     <section class="section-three" id="skills">
-        <div class="skills-header black-text">
+        <div class="skills-header black-text relative">
             Skills
+            <span class = "absolute bottom-0 right-0 w-2/3 h-1 bg-blue"></span></span>
         </div>
 
         <div class="skills-containers max-w-none lg:max-w-screen-lg gap-16 lg:gap-8 py-8 w-full">
             
-            <div class="skills-wrapper h-full w-full">
+            <div class="skills-wrapper h-full w-full aos-init" data-aos="fade-right" data-aos-duration="1000">
                 <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
                     <h6 class="skills-title text-xl lg:text-xl black-text">
                         <lord-icon
@@ -155,7 +163,7 @@
                 </div>
             </div>
             
-            <div class="skills-wrapper h-full w-full">
+            <div class="skills-wrapper h-full w-full" data-aos="fade-right" data-aos-duration="4000">
                 <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
                     <h6 class="skills-title text-xl lg:text-xl black-text">
                         <lord-icon
@@ -181,7 +189,7 @@
                 </div>
             </div>
             
-            <div class="skills-wrapper h-full w-full">
+            <div class="skills-wrapper h-full w-full" data-aos="fade-left">
                 <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
                     <h6 class="skills-title text-xl lg:text-xl black-text">
                         <lord-icon
@@ -214,7 +222,7 @@
             
 
 
-            <div class="skills-wrapper h-full w-full">
+            <div class="skills-wrapper h-full w-full" data-aos="fade-left" data-aos-duration="4000">
                 <div class="skills-row flex flex-col items-center justify-center py-8 px-8">
                     <h6 class="skills-title text-xl lg:text-xl black-text">
                         <lord-icon
@@ -252,214 +260,347 @@
         </div>
     </section>
 
-    <!-- <section class="section-three" id="skills">
-        <div class="section-three-container">
-            <h2 class="skills-header">What can I do</h2>
-            <div class="row skills-container px-6 py-6">
-                <div class="col-lg-3 languages-container">
-                    <div class="skills-header-container">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/wluyqhxh.json"
-                            trigger="loop"
-                            delay="500"
-                            colors="primary:#111113"
-                            style="width:50px;height:50px">
-                        </lord-icon>
-                        <h2 class="language-header">Languages</h2>
-                    </div>
-                    <div class="skills-container-contents">
-                        <h3 class="skills-contents">Java</h3>
-                        <h3 class="skills-contents">Javascript</h3>
-
-                        <h3 class="skills-contents">PHP</h3>
-                        <h3 class="skills-contents">Python</h3>
-
-                        <h3 class="skills-contents">VB.Net</h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 databases-container">
-                    <div class="skills-header-container">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/ochimkct.json"
-                            trigger="loop"
-                            delay="500"
-                            colors="primary:#111113"
-                            style="width:50px;height:50px">
-                        </lord-icon>
-                        <h2 class="database-header">Databases</h2>
-                    </div>
-
-                    <div class="skills-container-contents">
-                        <h3 class="skills-contents">PHPMyAdmin</h3>
-                        <h3 class="skills-contents">MySQL</h3>
-                        <h3 class="skills-contents">MS Access Database</h3>
-                        <h3 class="skills-contents">Firebase</h3>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 platform-container">
-                    <div class="skills-header-container">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/jvucoldz.json"
-                            trigger="loop"
-                            delay="500"
-                            colors="primary:#111113"
-                            style="width:50px;height:50px">
-                        </lord-icon>
-                        <h2 class="platform-header">Platforms</h2>
-                    </div>
-                    <div class="skills-container-contents">
-                        <h3 class="skills-contents">Android</h3>
-                        <h3 class="skills-contents">Web</h3>
-                        <h3 class="skills-contents">Windows</h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 software-container">
-                    <div class="skills-header-container">
-                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/hbigeisx.json"
-                            trigger="loop"
-                            delay="500"
-                            stroke="500"
-                            colors="primary:#111113"
-                            style="width:50px;height:50px">
-                        </lord-icon>
-                        <h2 class="software-header">Framework/Softwares</h2>
-                    </div>
-                    <div class="skills-container-contents">
-                        <h3 class="skills-contents">Adobe XD</h3>
-                        <h3 class="skills-contents">Adobe Photoshop</h3>
-                        <h3 class="skills-contents">VS Code</h3>
-                        <h3 class="skills-contents">XAMPP Server</h3>
-                        <h3 class="skills-contents">Github</h3>
-                        <h3 class="skills-contents">Wordpress</h3>
-                        <h3 class="skills-contents">WooCommerce</h3>
-                        <h3 class="skills-contents">jQuery</h3>
-                        <h3 class="skills-contents">Flexboxgrid</h3>
-                        <h3 class="skills-contents">Tailwind</h3>
-                        <h3 class="skills-contents">Xcode</h3>
-                        <h3 class="skills-contents">Visual Studio</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
 
     <section class="section-four" id="projects">
-        <div class="section-four-container">
-            <h2 class="projects-header">Projects</h2>
+        <div class="section-four-container w-full h-full flex flex-col items-center justify-start">
+            <h2 class="projects-header black-text mb-16 relative">Projects <span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
+
+            <div class = "grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/outsource.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Outsourcing Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/card.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Card Game Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/travel.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Travel Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+  
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/port.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Business Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/portfolio.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Portfolio Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <video class = "project-video" loop muted>
+                                    <source src="assets/harbour.mp4">
+                                </video>
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Space Estate Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <img class = "project-video" src="assets/portal.png" alt="" srcset="">
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Employee Portal Website</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">Employee Portal, our internship project, is designed to create a comprehensive platform showcasing employee attendance records and generating salary payslips</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JQuery</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Bootstrap</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <img class = "project-video" src="assets/sanfabian-app.png" alt="" srcset="">
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">San Fabian App</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">"The San Fabian app, our Android Capstone Project, guides tourists in exploring San Fabian through a user-friendly Android application.</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">JAVA</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">XAML</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">SQLite</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <img class = "project-video" src="assets/ams.png" alt="" srcset="">
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">Attendance Monitoring System (Windows Application)</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">"Our school project, the Attendance Monitoring System, efficiently tracks students' time in and time out, providing a reflective overview of their attendance.</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">VB.net</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">MS Access Database</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+   
+                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
+                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start">
+                                <img class = "project-video" src="assets/sanfabian-web.png" alt="" srcset="">
+                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                                    <h6 class="black-text text-md font-semibold py-2 certificate-name">San Fabian Web</h6>
+                                    <p class="black-text text-sm certificate-des pb-0">"Introducing the San Fabian web version for an enhanced online experience.</p>
+                                    <div class="pt-4 flex flex-wrap gap-2">
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">PHP</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">Javascript</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">HTML</span>
+                                        <span class="border-solid border-black border-1 rounded-full py-0.5 px-5">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
         </div>
+
     </section>
 
 
     <section class="section-five" id="resume">
         <div class="section-five-container">
-            <h2 class="resume-header">Resume</h2>
-            <div class="experience-container row">
-                <div class="experience-header-container col-lg-3">
-                    <h3 class="experience-header">Work Experience</h3>
+            <h2 class="resume-header relative">Resume<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
+            
+
+            <div class="work-experience-container max-w-none lg:max-w-screen-lg grid grid-cols-2 gap-8 gap-y-12 md:gap-x-36 w-full">
+                <div class="flex exp-col-left justify-end" data-aos="fade-up" data-aos-duration="4000">
+                    <span class="text-xl font-bold black-text text-right md:text-right">Experience</span>
                 </div>
-                <div class="experience-all-container col-lg-9">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">A2 DESIGN LAB</h3>
-                                <h4 class="experience-list-position">Junior Web Developer</h4>
-                                <h4 class="experience-list-location">Libis Quezon City, Philippines</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> Apr 20 2022 - Present</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">A2 DESIGN LAB (INTERNSHIP)</h3>
-                                <h4 class="experience-list-position">Web Developer Trainee</h4>
-                                <h4 class="experience-list-location">Libis Quezon City, Philippines</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> Jan 2022 - Apr 2022 (500Hours)</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">GOOGLE DEVELOPER STUDENT CLUBS</h3>
-                                <h4 class="experience-list-position">Operations Team Manager</h4>
-                                <h4 class="experience-list-location">PHINMA - University of Pangasinan</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> Aug 2020 - Apr 2021</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">COLLEGE OF INFORMATION TECHNOLOGY</h3>
-                                <h4 class="experience-list-position">Senior High School Internship</h4>
-                                <h4 class="experience-list-location">PHINMA - University of Pangasinan</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> Dec 2017 - Apr 2018</h4>
-                            </div>
-                        </div>
+                <div class="flex justify-end exp-col-right">
+                    <div class="work-exp flex flex-col items-start justify-end" data-aos="fade-up" data-aos-duration="4000">
+                        <a href="assets/JOHN VINCENT BARNACHEA RESUME.pdf" target="_blank">
+                            <button class="px-10 py-2 front-cta-secondary black-text flex justify-center items-center gap-4">
+                                Resume <i class="bi bi-download flex"></i>
+                            </button>
+                        </a>
                     </div>
-                   
-
-                   
-
-                   
-
-                   
                 </div>
 
-                <div class="breakline">
-                    <div class="hr"></div>
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">Apr 2022 - Present</span>
                 </div>
-
-
-                <div class="experience-header-container col-lg-3">
-                    <h3 class="experience-header">Education</h3>
-                </div>
-                <div class="experience-all-container col-lg-9">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">BS INFORMATION TECHNOLOGY</h3>
-                                <h4 class="experience-list-position">Major In System Development</h4>
-                                <h4 class="experience-list-location">PHINMA - University of Pangasinan</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> June 2018 - June 2022</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">SENIOR HIGH SCHOOL</h3>
-                                <h4 class="experience-list-position">Techincal Vocational Livelihood(TVL) - ICT</h4>
-                                <h4 class="experience-list-location">PHINMA - University of Pangasinan</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> June 2016 - March 2018</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">JUNIOR HIGH SCHOOL</h3>
-                       
-                                <h4 class="experience-list-location">Benigno V. Aldana National High School</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> June 2012 - March 2016</h4>
-                            </div>        
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="experience-list-container">
-                                <h3 class="experience-list-header">ELEMENTARY</h3>
-                             
-                                <h4 class="experience-list-location">Malasin Elementary Pangasinan</h4>
-                                <h4 class="experience-list-date"><i class="fa-regular fa-calendar"></i> June 2006 - March 2012</h4>
-                            </div>
-                        </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">A2 Design Lab</h2>
+                        <span class="black-text text-md pb-1">Junior Web Developer</span>
+                        <span class="black-text text-md pb-1">4F, CINQ Bldg, Metropoli, Libis, Quezon City, Philippines</span>
+                        <p class="black-text text-sm pb-0">Created WordPress websites for clients and internal projects with WooCommerce. Still learning lot of new things.</p>
                     </div>
-                    
-
-                    
-
-                    
-                   
                 </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">Jan 2022 - Apr 2022</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">A2 Design Lab (Internship)</h2>
+                        <span class="black-text text-md pb-1">Web Developer Trainee</span>
+                        <span class="black-text text-md pb-1">4F, CINQ Bldg, Metropoli, Libis, Quezon City, Philippines</span>
+                        <p class="black-text text-sm pb-0">"Built a company's web-based employee portal and collaborated on wireframe design.</p>
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">Aug 2020 - Apr 2021</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">Google Developer Student Clubs</h2>
+                        <span class="black-text text-md pb-1">Operations Team Manager</span>
+                        <span class="black-text text-md pb-1">PHINMA - University of Pangasinan</span>
+                        <p class="black-text text-sm pb-0">As Operations Team Manager for GDSC, oversee daily operations, coordinate events, manage team, and ensure efficient execution for an enhanced student experience.</p>
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">Dec 2017 - Apr 2018</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">College of Information Technology Department</h2>
+                        <span class="black-text text-md pb-1">Senior High School Internship</span>
+                        <span class="black-text text-md pb-1">PHINMA - University of Pangasinan</span>
+                        <p class="black-text text-sm pb-0">Constructed a static college department website and managed department tasks.</p>
+                    </div>
+                </div>
+
+
             </div>
+
+
+            <div class="educational-attainment-container max-w-none lg:max-w-screen-lg grid grid-cols-2 gap-8 gap-y-12 md:gap-x-36 w-full pt-12">
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-xl font-bold black-text text-right md:text-right">Educational Attainment</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                       
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">June 2018 - June 2022</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">BS INFORMATION TECHNOLOGY</h2>
+                        <span class="black-text text-md pb-1">Major In System Development</span>
+                        <span class="black-text text-md pb-1">PHINMA - University of Pangasinan</span>
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">June 2016 - March 2018</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">SENIOR HIGH SCHOOL</h2>
+                        <span class="black-text text-md pb-1">Techincal Vocational Livelihood(TVL) - ICT</span>
+                        <span class="black-text text-md pb-1">PHINMA - University of Pangasinan</span>
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">June 2012 - March 2016</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">JUNIOR HIGH SCHOOL</h2>
+                        <span class="black-text text-md pb-1">Benigno V. Aldana National High School</span>
+                    </div>
+                </div>
+
+                <div class="flex exp-col-left justify-end" data-aos="fade-left" data-aos-duration="4000">
+                    <span class="text-lg black-text text-right md:text-right">June 2006 - March 2012</span>
+                </div>
+                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
+                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                        <h2 class="black-text font-semi-bold text-xl pb-4">ELEMENTARY GRADE</h2>
+                        <span class="black-text text-md pb-1">Malasin Elementary Pangasinan</span>
+                    </div>
+                </div>
+                
+
+
+            </div>
+            
         </div>
     </section>
 
@@ -473,11 +614,11 @@
 
     <section class="section-seven" id="certificates">
         <div class="section-seven-container w-full h-full flex flex-col items-center justify-start ">
-            <h2 class="certificate-header mb-16">Certificates & Awards</h2>
+            <h2 class="certificate-header mb-16  relative">Certificates & Awards<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
             
             <div class="certificates-list-container grid grid-cols-1 lg:grid-cols-4 gap-8">
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/GDGPH2020Certificate_page-0001.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Google Developer Groud - Devfest 2020</h6>
@@ -486,163 +627,153 @@
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/COC-Barnachea_John_page-0001.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">A2 Design Lab Internship COC</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases.</p>
+                            <p class="black-text text-sm certificate-des pb-0">During my internship at A2 Design Lab, dedicated 500 hours to learning and exploring real-world applications.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/GDSC.png" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Google Developer Student Club Core Team Member</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Proudly served as a core team member of the Google Developer Student Club, contributing to innovation and community engagement.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Useful tools that can help you in your project</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Explored valuable project tools in Study Jam#1, enhancing project efficiency and skills.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.png" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Developer Student Club</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Dive into the Developer Student Club world with Study Jam#1, your gateway to a transformative introduction</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1_1.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Fetch API</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Unlock the power of data retrieval with Study Jam#1, an introduction to the Fetch API.</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/dsc citesc.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">DSC PHINMA-UPang COA</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Gratefully received a Certificate of Appreciation from DSC PHINMA-UPang for dedicated contributions and commitment.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Kinobi.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Kinobi Resume Workshop COP</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Proudly earned a Certificate of Participation from the Kinobi Resume Workshop, enhancing professional skills and resume-building expertise.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/CODING.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Techno Olympics 2020 Coding Competition</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Participated in the Techno Olympics 2020 Coding Competition, showcasing coding prowess and problem-solving skills.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Jobseekers Guide.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Bagosphere Jobseeker's Guide</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Dive into success with the Bagosphere Jobseeker's Guide, your key to navigating the job market.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Flutter.png" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Funky Flutter Workshop</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Immersed in creativity at the Funky Flutter Workshop, exploring the vibrant world of Flutter development.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/firebase.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Firebase in Action Webinar</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Engaged in the Firebase in Action Webinar, gaining insights into the practical application of Firebase technology.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/MS.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Software Development Management with MS Project</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Mastered Software Development Management using MS Project for effective project planning and execution.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Photography.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Intro to Photography and Videography: A beginners guide</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Dive into the world of visual storytelling with 'Intro to Photography and Videography: A beginners guide,' your gateway to creative expression.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
-                        <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                            <h6 class="black-text text-md font-semibold py-2 certificate-name">Study Jam#1 - Useful tools that can help you in your project</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/SEMINAR.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Developing Android with Kotlin 1</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Embarked on the journey of Developing Android with Kotlin 1, mastering the essentials of mobile app creation.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full">
-                    <div class="certificate-wrapper pt-1 pb-4 px-4 flex flex-col justify-start items-start">
+                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                    <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.jpg" alt="" srcset="">
                         <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                             <h6 class="black-text text-md font-semibold py-2 certificate-name">Certificate of Recognition Completing Level 2 Requirements</h6>
-                            <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases</p>
+                            <p class="black-text text-sm certificate-des pb-0">Honored to receive a Certificate of Recognition for successfully completing Level 2 requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -654,17 +785,22 @@
     <div id="contact"></div>
     <footer class="section-eight" >
         <div class="section-eight-container">
-            <div class="row contact-row">
-                <div class="col-lg-6 contact-col">
+            <div class="grid grid-cols-12 contact-row">
+                <div class="col-span-4 contact-col">
                     <h6 class="gmail-header">Contact Me</h6>
                     <a style="text-decoration: none;" href="mailto:barnacheatolentino@gmail.com">
                         <div class="gmail-address-container">
                             <i class="fa-regular fa-envelope gmail-icon"></i>
-                            <span class="gmail-address">barnacheatolentino@gmail.com</span>
+                            <span class="gmail-address text-md">barnacheatolentino@gmail.com</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-6 contact-col">
+                <div class="col-span-4 contact-col">
+                    <div class="all-rights-container">
+                        <span class="all-rights-reserved text-md text-center">2024 - John Vincent Barnachea<br>Website Portfolio &copy; All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-span-4 contact-col">
                     <h6 class="get-in-touch-header">Feel free to hit me up. I'm looking<br>forward to hearing from you.</h6>
                     <div class="get-in-touch-icons-container">
                         <a href="https://www.facebook.com/Binsuuuuuu" target="_blank"><i class="fa-brands fa-facebook-f get-icon"></i></a>
@@ -673,17 +809,20 @@
                         <a href="https://github.com/VinceBarnachea" target="_blank"><i class="fa-brands fa-github get-icon"></i></a>
                     </div>
                 </div>
+               
             </div>
 
-            <div class="all-rights-container">
-                <span class="all-rights-reserved">2023 - John Vincent Barnachea Website Portfolio &copy; All rights reserved.</span>
-            </div>
+          
         </div>
     </footer>
 
     <div class="progress-bar-container">
         <div class="progress-bar"></div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

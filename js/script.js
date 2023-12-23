@@ -1,4 +1,6 @@
 jQuery( window ).on("load", function() {
+
+
     
     var footerHeight = $('.section-eight').outerHeight(true);
     jQuery('.section-seven').css({
@@ -49,7 +51,7 @@ jQuery( window ).on("load", function() {
      setTimeout(function () {
 
         $('.front-my-image').css({
-            'height': '80%'
+            'height': '65%'
        });
   
       
@@ -59,13 +61,47 @@ jQuery( window ).on("load", function() {
 });
 
 $(document).ready(function() {
+    
+    var figure = $('.video').hover(hoverVideo, hideVideo);
+
+    function hoverVideo(e){
+        $('video', this).get(0).play();
+    }
+
+    function hideVideo(e){
+        $('video', this).get(0).pause();
+    }
+
+
+
     // Calculate the total height of the document
     var docHeight = $(document).height();
     
+
+    var offset = 100;
     // Bind the scroll event to the window
     $(window).scroll(function() {
-        // Calculate the current scroll position
         var scrollTop = $(window).scrollTop();
+  
+
+        // Add/remove class based on scroll position
+        $('section').each(function() {
+            var target = $(this).offset().top - offset;
+            var id = $(this).attr('id');
+
+            if (scrollTop >= target) {
+                $('nav .links .mobile-nav-contact-container').removeClass('active');
+                $('nav .links .mobile-nav-contact-container:has(a[href="#' + id + '"])').addClass('active');
+            }
+        });
+
+
+
+
+
+
+        // Calculate the current scroll position
+      
         
         // Calculate the scroll percentage
         var scrollPercent = (scrollTop / (docHeight - $(window).height())) * 100;

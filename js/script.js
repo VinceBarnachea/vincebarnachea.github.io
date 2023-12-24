@@ -9,7 +9,12 @@ jQuery( window ).on("load", function() {
     jQuery('.section-two').css({
         'margin-top' : '100vh'
     });
-    
+    setTimeout(function(){
+        jQuery('.loader-container').css({
+            'display':'none'
+        });
+    },5000);
+
     if(jQuery(window).width()>768){
         setTimeout(function () {
             $('.front-black').css({
@@ -17,12 +22,12 @@ jQuery( window ).on("load", function() {
             });
     
      
-         }, 10);
+         }, 5500);
         setTimeout(function () {
            $('.navbar').css({
                 'top': '0'
            });
-        }, 1000);
+        }, 6000);
 
         setTimeout(function () {
 
@@ -31,7 +36,7 @@ jQuery( window ).on("load", function() {
            });
       
           
-         }, 1700);
+         }, 6700);
     }
     else{
         setTimeout(function () {
@@ -42,7 +47,7 @@ jQuery( window ).on("load", function() {
             });
     
      
-         }, 10);
+         }, 5500);
          setTimeout(function () {
 
             $('.front-my-image').css({
@@ -50,7 +55,7 @@ jQuery( window ).on("load", function() {
            });
       
           
-         }, 1700);
+         }, 6700);
     }
 
 
@@ -62,7 +67,7 @@ jQuery( window ).on("load", function() {
         });
         
       
-     }, 1070);
+     }, 6070);
 
      setTimeout(function () {
 
@@ -72,7 +77,7 @@ jQuery( window ).on("load", function() {
         });
   
       
-     }, 2000);
+     }, 7000);
 
 
     
@@ -85,7 +90,7 @@ jQuery( window ).on("load", function() {
 
 
       
-     }, 2200);
+     }, 7200);
 
      setTimeout(function () {
 
@@ -96,7 +101,7 @@ jQuery( window ).on("load", function() {
 
 
       
-     }, 3000);
+     }, 8000);
 
 
 

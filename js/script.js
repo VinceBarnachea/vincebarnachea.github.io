@@ -8,23 +8,51 @@ jQuery( window ).on("load", function() {
 
     jQuery('.section-two').css({
         'margin-top' : '100vh'
-    });  
-    setTimeout(function () {
-        $('.front-black').css({
-             'left': '0'
-        });
-
- 
-     }, 10);
-    setTimeout(function () {
-       $('.navbar').css({
-            'top': '0'
-       });
-
-       
-
+    });
+    
+    if(jQuery(window).width()>768){
+        setTimeout(function () {
+            $('.front-black').css({
+                 'left': '0'
+            });
+    
      
-    }, 1000);
+         }, 10);
+        setTimeout(function () {
+           $('.navbar').css({
+                'top': '0'
+           });
+        }, 1000);
+
+        setTimeout(function () {
+
+            $('.front-my-image').css({
+                'height': '50%'
+           });
+      
+          
+         }, 1700);
+    }
+    else{
+        setTimeout(function () {
+            $('.front-black').css({
+                 'top':'0',
+                 'height': '20%'
+
+            });
+    
+     
+         }, 10);
+         setTimeout(function () {
+
+            $('.front-my-image').css({
+                'height': '100%'
+           });
+      
+          
+         }, 1700);
+    }
+
 
     setTimeout(function () {
 
@@ -47,14 +75,7 @@ jQuery( window ).on("load", function() {
      }, 2000);
 
 
-     setTimeout(function () {
-
-        $('.front-my-image').css({
-            'height': '50%'
-       });
-  
-      
-     }, 1700);
+    
 
      setTimeout(function () {
 

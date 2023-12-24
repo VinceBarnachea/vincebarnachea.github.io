@@ -1,6 +1,5 @@
 jQuery( window ).on("load", function() {
 
-
     
     var footerHeight = $('.section-eight').outerHeight(true);
     jQuery('.section-seven').css({
@@ -51,16 +50,58 @@ jQuery( window ).on("load", function() {
      setTimeout(function () {
 
         $('.front-my-image').css({
-            'height': '65%'
+            'height': '50%'
        });
   
       
      }, 1700);
 
+     setTimeout(function () {
+
+        $('.front-my-image').css({
+            'border-radius': '50%'
+       });
+
+
+      
+     }, 2200);
+
+     setTimeout(function () {
+
+        $('.front-image-offset').css({
+            'opacity': '1'
+       });
+      
+
+
+      
+     }, 3000);
+
+
+
+   
+
 
 });
 
 $(document).ready(function() {
+    console.log('Hello Developers!');
+
+
+    jQuery(".form-inputs").focus(function() {
+        // Add has-value class to the label
+        jQuery(this).siblings('label').addClass('has-value');
+    })
+    // blur input fields on unfocus + if has no value
+    .blur(function() {
+        // Set input current value
+        var text_val = jQuery(this).val();
+        // Check if input has value
+        if (text_val === "") {
+            // If current value is none, then remove has-value
+            jQuery(this).siblings('label').removeClass('has-value');
+        }
+    });
     
     var figure = $('.video').hover(hoverVideo, hideVideo);
 
@@ -109,6 +150,9 @@ $(document).ready(function() {
         // Update the progress bar width
         $('.progress-bar').css('width', scrollPercent + '%');
 
+
+
+       
         if(scrollTop > jQuery('.section-two').offset().top - (jQuery(window).height()/3)){
             $('.navbar-background').css({
                 'top' : 0
@@ -118,6 +162,26 @@ $(document).ready(function() {
                 'background': '#00003b'
             });
             $('.header-cta').addClass('px-8 py-2');
+            if (scrollTop + $(window).height() == $(document).height()) {
+                $('.header-cta').css({
+                    'color' : '#111113',
+                    'background': 'transparent',
+                    'font-weight' : 'bold'
+
+                });
+                $('.header-cta').removeClass('px-8 py-2');
+                $('.cert').removeClass('active');
+
+              }
+              else{
+                $('.header-cta').css({
+                    'color' : '#ffffff',
+                    'background': '#00003b',
+                    'font-weight' : 'normal'
+                });
+                $('.header-cta').addClass('px-8 py-2');
+                $('.cert').addClass('active');
+              }
         }else{
             $('.navbar-background').css({
                 'top' : '-'+100+'%'
@@ -131,7 +195,10 @@ $(document).ready(function() {
 
         if(scrollTop > jQuery('.section-six').offset().top - (jQuery(window).height()/1.1)){
             $('.section-one').css({
-                'visibility':'hidden'
+                'display':'none'
+            });
+            $('.section-eight').css({
+                'display':'block'
             });
             var $sections = $('.section-six');
             var $window = $(window);
@@ -152,7 +219,10 @@ $(document).ready(function() {
         }
         else{
             $('.section-one').css({
-                'visibility':'visible'
+                'display':'flex'
+            });
+            $('.section-eight').css({
+                'display':'hidden'
             });
         }
     });
@@ -161,4 +231,6 @@ $(document).ready(function() {
     $('#home-nav').click(function() {
         $body.animate({ scrollTop: 0 }, '1500');
     });
+
+   
 });

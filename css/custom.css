@@ -869,6 +869,10 @@ nav .icon-burger .line {
     border-radius: 5px;
 }
 
+.submit-btn:hover{
+    cursor: pointer;
+}
+
 .form-inputs:focus {
     outline: 2px solid #ddd !important;
 }
@@ -974,7 +978,7 @@ nav .icon-burger .line {
     pointer-events: none;
     transition: all 0.2s ease;
     position: absolute;
-    left: 1.5rem;
+    left: 1rem;
     transform: translateY(10px);
     z-index: 2;
 }

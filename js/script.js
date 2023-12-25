@@ -113,6 +113,20 @@ jQuery( window ).on("load", function() {
 $(document).ready(function() {
     console.log('Hello Developers!');
 
+    function sendEmail(){
+
+
+        Email.send({
+            SecureToken: '457b9f22-9064-4cda-b4a6-a606168b0668',
+            To : 'barnacheatolentino@gmail.com',
+            From : 'barnacheajohnvincent48@gmail.com',
+            Subject : 'Hello',
+            Body : 'Hello'
+        }).then(
+        message => alert(message)
+        );
+    }
+
 
     jQuery(".form-inputs").focus(function() {
         // Add has-value class to the label

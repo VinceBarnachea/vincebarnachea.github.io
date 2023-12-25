@@ -803,40 +803,42 @@
                 <span class="black-main-header relative text-4xl md:text-4xl lg:text-5xl">Contact Me <span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span>
                 <p class="contect-form-par pt-4 text-sm md:text-md black-text text-center">Feel free to reach out using the form below for collaboration inquiries, service questions, or just to say hello. I look forward to connecting with you!</p>
             </div>
-
-            <div class="contact-forms bg-white shadow-xl px-3 py-3 mt-3 md:px-8 md:py-8 md:mt-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-12 pt-8">
-                    <div class="name-field relative">
-                        <label class = "text-sm md:text-md cfNameLabel" for="cfName">Name</label>
-                        <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-6 md:py-2.5" type="text" name="getName" id="cfName" placeholder="Name"/>
+            <form onsubmit="sendEmail(); reset(); return false;">    
+                <div class="contact-forms bg-white shadow-xl px-3 py-3 mt-3 md:px-8 md:py-8 md:mt-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-12 pt-8">
+                        <div class="name-field relative">
+                            <label class = "text-sm md:text-md cfNameLabel" for="cfName">Name</label>
+                            <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-4 md:py-2.5" type="text" name="getName" id="cfName" placeholder="Name"/>
+                        </div>
+                        <div class="email-field relative">
+                            <label class = "text-sm md:text-md cfemailLabel" for="cfemail">Email</label>
+                            <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-4 md:py-2.5" type="email" name="getEmail" id="cfEmail" placeholder="Email"/>
+                        </div>
                     </div>
-                    <div class="email-field relative">
-                        <label class = "text-sm md:text-md cfemailLabel" for="cfemail">Email</label>
-                        <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-6 md:py-2.5" type="text" name="getEmail" id="cfEmail" placeholder="Email"/>
-                    </div>
-                </div>
 
-                <div class="grid grid-cols-1 pt-8">
-                    <div class="subject-field relative">
-                        <label class = "text-sm md:text-md cfSubjectLabel" for="cfSubject">Subject</label>
-                        <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-6 md:py-2.5" type="text" name="getsubject" id="cfSubject" placeholder="Subject"/>
+                    <div class="grid grid-cols-1 pt-8">
+                        <div class="subject-field relative">
+                            <label class = "text-sm md:text-md cfSubjectLabel" for="cfSubject">Subject</label>
+                            <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-4 md:py-2.5" type="text" name="getsubject" id="cfSubject" placeholder="Subject"/>
+                        </div>
                     </div>
-                </div>
 
-                <div class="grid grid-cols-1 pt-8">
-                    <div class="message-field relative">
-                        <label class = "text-sm md:text-md cfMessageLabel" for="cfMessage">Message</label>
-                        <textarea rows="4" class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-6 md:py-2.5" type="text" name="getmessage" id="cfMessage" placeholder="Message"></textarea>
+                    <div class="grid grid-cols-1 pt-8">
+                        <div class="message-field relative">
+                            <label class = "text-sm md:text-md cfMessageLabel" for="cfMessage">Message</label>
+                            <textarea rows="4" class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-md md:px-4 md:py-2.5" type="text" name="getmessage" id="cfMessage" placeholder="Message"></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <div class="grid grid-cols-1 pt-8">
-                    <div class="submit w-full flex justify-center items-center">
-                        <input class = "submit-btn py-2 px-10 text-white text-md bg-darkblue shadow-md" type="submit" value="Submit">
+                    <div class="grid grid-cols-1 pt-8">
+                        <div class="submit w-full flex justify-center items-center">
+                            <input class = "submit-btn py-2 px-10 text-white text-md bg-darkblue shadow-md" type="submit" value="Submit">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        </form>
 
         <div class="section-eight-container pt-3 md:pt-12">
             <div class="grid grid-cols-12 md:gap-0 gap-4 contact-row">
@@ -874,8 +876,40 @@
         <div class="progress-bar"></div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        var cfName = document.getElementById('cfName');
+        var cfEmail = document.getElementById('cfEmail');
+        var cfSubject = document.getElementById('cfSubject');
+        var cfMessage = document.getElementById('cfMessage');
+
+
+        function sendEmail(){
+            
+            var bodyMessage = 'Hello Vince!,<br>There is new inquiry on your website Portfolio.<br><br>Full Name: '+cfName.value+'<br>Email: '+cfEmail.value+'<br>Message: '+cfMessage.value;
+            Email.send({
+                SecureToken: '457b9f22-9064-4cda-b4a6-a606168b0668',
+                To : 'barnacheatolentino@gmail.com',
+                From : 'barnacheajohnvincent48@gmail.com',
+                Subject : cfSubject.value,
+                Body : bodyMessage
+            }).then(
+            message => {
+                if(message == "OK"){
+                    Swal.fire({
+                        title: "Message Sent!",
+                        text: "Thank you! Your message has successfully soared through cyberspace and landed safely in my inbox.",
+                        icon: "success"
+                    });
+                }
+            }
+            );
+        }
     </script>
 </body>
 

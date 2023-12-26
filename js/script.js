@@ -2,7 +2,7 @@ jQuery( window ).on("load", function() {
 
     
     var footerHeight = $('.section-eight').outerHeight(true);
-    jQuery('.section-seven').css({
+    jQuery('.contact-section').css({
         'margin-bottom' : footerHeight
     });  
 
@@ -113,19 +113,7 @@ jQuery( window ).on("load", function() {
 $(document).ready(function() {
     console.log('Hello Developers!');
 
-    function sendEmail(){
 
-
-        Email.send({
-            SecureToken: '457b9f22-9064-4cda-b4a6-a606168b0668',
-            To : 'barnacheatolentino@gmail.com',
-            From : 'barnacheajohnvincent48@gmail.com',
-            Subject : 'Hello',
-            Body : 'Hello'
-        }).then(
-        message => alert(message)
-        );
-    }
 
 
     jQuery(".form-inputs").focus(function() {
@@ -246,7 +234,6 @@ $(document).ready(function() {
             var totalHeight = $sections.length * windowHeight;
 
             var scrollPercentage = (($window.scrollTop() / totalHeight) * 100)-500;
-            console.log(scrollPercentage);
             $('#never').css({
                 'right' : scrollPercentage +'%'
             });

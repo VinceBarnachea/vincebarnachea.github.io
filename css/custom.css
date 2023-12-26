@@ -190,13 +190,15 @@ nav .icon-burger .line {
     padding: 5%;
 }
 
-.section-eight {
+.section-eight,.contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 2% 5%;
 }
+
+
 
 
 /* Section One =============================================================================================================================================== */
@@ -843,6 +845,26 @@ nav .icon-burger .line {
     background-attachment: fixed;
     background-position: center;
 }
+.contact-section{
+    z-index: 5;
+    width: 100%;
+    --grid-size: 30px;
+    --grid-strength: 1px;
+    --grid-dash: 5px;
+    --grid-gap: 5px;
+    --grid-color: #ddd;
+    --paper-color: #fff;
+
+    background-color: var(--paper-color);
+    background-size: var(--grid-dash) var(--grid-dash), var(--grid-size) var(--grid-size);
+    background-image:
+        linear-gradient(to bottom, transparent var(--grid-gap), var(--paper-color) var(--grid-gap)),
+        linear-gradient(to right, var(--grid-color) var(--grid-strength), transparent var(--grid-strength)),
+        linear-gradient(to right, transparent var(--grid-gap), var(--paper-color) var(--grid-gap)),
+        linear-gradient(to bottom, var(--grid-color) var(--grid-strength), transparent var(--grid-strength));
+    background-attachment: fixed;
+    background-position: center;
+}
 
 .section-eight-container {
     display: flex;
@@ -906,19 +928,19 @@ nav .icon-burger .line {
     align-items: center;
 }
 
-.get-in-touch-icons-container a {
-    border-radius: 50%;
-    text-decoration: none;
-    margin: 0 5px 0;
-    transition: all ease-in-out 0.3s;
-}
 
-.get-in-touch-icons-container a:hover {
-    background: var(--black);
-}
+
 
 .get-in-touch-icons-container a:hover .get-icon {
     color: var(--white);
+}
+.foot-icon-container{
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.get-in-touch-icons-container .foot-icon-container:hover {
+    background: var(--darkblue);
+
 }
 
 .gmail-icon {
@@ -943,7 +965,6 @@ nav .icon-burger .line {
 .get-icon {
     color: var(--black);
     padding: 10px;
-    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -979,12 +1000,26 @@ nav .icon-burger .line {
     transition: all 0.2s ease;
     position: absolute;
     left: 1rem;
-    transform: translateY(10px);
-    z-index: 2;
+    transform: translateY(12px);
+    z-index: 0;
+}
+.field-error .error-text{
+    display: block;
+}
+.field-error .form-inputs{
+    border: 2px solid #d93025;
+}
+
+.error-text{
+    display: none;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    color: #d93025;
 }
 
 .contact-forms label.has-value {
-    transform: translate(-1.5rem, -1.5rem);
+    transform: translate(-1rem, -1.5rem);
     font-size: 14px;
     color: var(--black);
 }

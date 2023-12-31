@@ -13,6 +13,9 @@ jQuery( window ).on("load", function() {
         jQuery('.loader-container').css({
             'display':'none'
         });
+        jQuery('html').css({
+            'overflow':'auto'
+        });
     },5000);
 
     if(jQuery(window).width()>768){

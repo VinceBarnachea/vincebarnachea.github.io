@@ -51,6 +51,13 @@ jQuery( window ).on("load", function() {
     
      
          }, 5500);
+
+         setTimeout(function () {
+            $('.navbar').css({
+                 'top': '0'
+            });
+         }, 6000);
+         
          setTimeout(function () {
 
             $('.front-my-image').css({

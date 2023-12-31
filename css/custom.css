@@ -1073,9 +1073,9 @@ nav .icon-burger .line {
 
     nav .icon-burger {
         display: block;
-        z-index: 10;
-        right: 10%;
-        top: 70%;
+        z-index: 9999;
+        right: 5%;
+        top: 2rem;
         filter: drop-shadow(-2px 0 2px black);
     }
 
@@ -1084,14 +1084,17 @@ nav .icon-burger .line {
     }
 
     nav .links a {
-        font-size: 32px;
-        filter: drop-shadow(0px 0 0px black);
+        font-size: 1.5rem;
     }
 
-    nav .links li {
+    nav .links li, .mob-contact {
         padding: 25px 0;
     }
-
+    .mob-contact{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .header-line {
         display: none;
     }
@@ -1123,7 +1126,7 @@ nav .icon-burger .line {
     .mobile-nav-contact {
         width: 70%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 

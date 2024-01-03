@@ -1,7 +1,7 @@
 jQuery( window ).on("load", function() {
 
     
-    var footerHeight = $('.section-eight').outerHeight(true);
+    var footerHeight = jQuery('.section-eight').outerHeight(true);
     jQuery('.contact-section').css({
         'margin-bottom' : footerHeight
     });  
@@ -20,22 +20,22 @@ jQuery( window ).on("load", function() {
 
     if(jQuery(window).width()>768){
         setTimeout(function () {
-            $('.front-black').css({
+            jQuery('.front-black').css({
                  'left': '0'
             });
     
      
          }, 5500);
         setTimeout(function () {
-           $('.navbar').css({
+           jQuery('.navbar').css({
                 'top': '0'
            });
         }, 6000);
 
         setTimeout(function () {
 
-            $('.front-my-image').css({
-                'height': '50%'
+            jQuery('.front-my-image').css({
+                'height': '45%'
            });
       
           
@@ -43,7 +43,7 @@ jQuery( window ).on("load", function() {
     }
     else{
         setTimeout(function () {
-            $('.front-black').css({
+            jQuery('.front-black').css({
                  'top':'0',
                  'height': '20%'
 
@@ -53,14 +53,14 @@ jQuery( window ).on("load", function() {
          }, 5500);
 
          setTimeout(function () {
-            $('.navbar').css({
+            jQuery('.navbar').css({
                  'top': '0'
             });
          }, 6000);
          
          setTimeout(function () {
 
-            $('.front-my-image').css({
+            jQuery('.front-my-image').css({
                 'height': '100%'
            });
       
@@ -71,7 +71,7 @@ jQuery( window ).on("load", function() {
 
     setTimeout(function () {
 
-        $('.front-cta-container,.header-hello').css({
+        jQuery('.front-cta-container,.header-hello').css({
              'opacity' : '1',
              'transform': 'translateY(0)'
         });
@@ -81,7 +81,7 @@ jQuery( window ).on("load", function() {
 
      setTimeout(function () {
 
-        $('.front-soc-icon').css({
+        jQuery('.front-soc-icon').css({
              'opacity' : '1',
              'transform': 'translateY(0)'
         });
@@ -94,7 +94,7 @@ jQuery( window ).on("load", function() {
 
      setTimeout(function () {
 
-        $('.front-my-image').css({
+        jQuery('.front-my-image').css({
             'border-radius': '50%'
        });
 
@@ -104,7 +104,7 @@ jQuery( window ).on("load", function() {
 
      setTimeout(function () {
 
-        $('.front-image-offset').css({
+        jQuery('.front-image-offset').css({
             'opacity': '1'
        });
       
@@ -120,10 +120,19 @@ jQuery( window ).on("load", function() {
 
 });
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
     console.log('Hello Developers!');
 
-
+    jQuery('a[href^="#"]').on('click', function(event) {
+        var target = jQuery(jQuery(this).attr('href'));
+  
+        if (target.length) {
+          event.preventDefault();
+          jQuery('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
 
 
     jQuery(".form-inputs").focus(function() {
@@ -141,36 +150,36 @@ $(document).ready(function() {
         }
     });
     
-    var figure = $('.video').hover(hoverVideo, hideVideo);
+    var figure = jQuery('.video').hover(hoverVideo, hideVideo);
 
     function hoverVideo(e){
-        $('video', this).get(0).play();
+        jQuery('video', this).get(0).play();
     }
 
     function hideVideo(e){
-        $('video', this).get(0).pause();
+        jQuery('video', this).get(0).pause();
     }
 
 
 
     // Calculate the total height of the document
-    var docHeight = $(document).height();
+    var docHeight = jQuery(document).height();
     
 
     var offset = 100;
     // Bind the scroll event to the window
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
+    jQuery(window).scroll(function() {
+        var scrollTop = jQuery(window).scrollTop();
   
 
         // Add/remove class based on scroll position
-        $('section').each(function() {
-            var target = $(this).offset().top - offset;
-            var id = $(this).attr('id');
+        jQuery('section').each(function() {
+            var target = jQuery(this).offset().top - offset;
+            var id = jQuery(this).attr('id');
 
             if (scrollTop >= target) {
-                $('nav .links .mobile-nav-contact-container').removeClass('active');
-                $('nav .links .mobile-nav-contact-container:has(a[href="#' + id + '"])').addClass('active');
+                jQuery('nav .links .mobile-nav-contact-container').removeClass('active');
+                jQuery('nav .links .mobile-nav-contact-container:has(a[href="#' + id + '"])').addClass('active');
             }
         });
 
@@ -183,90 +192,90 @@ $(document).ready(function() {
       
         
         // Calculate the scroll percentage
-        var scrollPercent = (scrollTop / (docHeight - $(window).height())) * 100;
+        var scrollPercent = (scrollTop / (docHeight - jQuery(window).height())) * 100;
         
         // Update the progress bar width
-        $('.progress-bar').css('width', scrollPercent + '%');
+        jQuery('.progress-bar').css('width', scrollPercent + '%');
 
 
 
        
         if(scrollTop > jQuery('.section-two').offset().top - (jQuery(window).height()/3)){
-            $('.navbar-background').css({
+            jQuery('.navbar-background').css({
                 'top' : 0
             });
-            $('.header-cta').css({
+            jQuery('.header-cta').css({
                 'color' : '#ffffff',
                 'background': '#00003b'
             });
-            $('.header-cta').addClass('px-8 py-2');
-            if (scrollTop + $(window).height() == $(document).height()) {
-                $('.header-cta').css({
+            jQuery('.header-cta').addClass('px-8 py-2');
+            if (scrollTop + jQuery(window).height() == jQuery(document).height()) {
+                jQuery('.header-cta').css({
                     'color' : '#111113',
                     'background': 'transparent',
                     'font-weight' : 'bold'
 
                 });
-                $('.header-cta').removeClass('px-8 py-2');
-                $('.cert').removeClass('active');
+                jQuery('.header-cta').removeClass('px-8 py-2');
+                jQuery('.cert').removeClass('active');
 
               }
               else{
-                $('.header-cta').css({
+                jQuery('.header-cta').css({
                     'color' : '#ffffff',
                     'background': '#00003b',
                     'font-weight' : 'normal'
                 });
-                $('.header-cta').addClass('px-8 py-2');
-                $('.cert').addClass('active');
+                jQuery('.header-cta').addClass('px-8 py-2');
+                
               }
         }else{
-            $('.navbar-background').css({
+            jQuery('.navbar-background').css({
                 'top' : '-'+100+'%'
             });
-            $('.header-cta').css({
+            jQuery('.header-cta').css({
                 'color' : '#111113',
                 'background': 'transparent'
             });
-            $('.header-cta').removeClass('px-8 py-2');
+            jQuery('.header-cta').removeClass('px-8 py-2');
         }
 
         if(scrollTop > jQuery('.section-six').offset().top - (jQuery(window).height()/1.1)){
-            $('.section-one').css({
+            jQuery('.section-one').css({
                 'display':'none'
             });
-            $('.section-eight').css({
+            jQuery('.section-eight').css({
                 'display':'block'
             });
-            var $sections = $('.section-six');
-            var $window = $(window);
-            var windowHeight = $window.height();
-            var totalHeight = $sections.length * windowHeight;
+            var jQuerysections = jQuery('.section-six');
+            var jQuerywindow = jQuery(window);
+            var windowHeight = jQuerywindow.height();
+            var totalHeight = jQuerysections.length * windowHeight;
 
-            var scrollPercentage = (($window.scrollTop() / totalHeight) * 100)-500;
-            $('#never').css({
+            var scrollPercentage = ((jQuerywindow.scrollTop() / totalHeight) * 100)-500;
+            jQuery('#never').css({
                 'right' : scrollPercentage +'%'
             });
-            $('#stop').css({
+            jQuery('#stop').css({
                 'left' : scrollPercentage +'%'
             });
-            $('#learning').css({
+            jQuery('#learning').css({
                 'right' : scrollPercentage +'%'
             });
         }
         else{
-            $('.section-one').css({
+            jQuery('.section-one').css({
                 'display':'flex'
             });
-            $('.section-eight').css({
+            jQuery('.section-eight').css({
                 'display':'hidden'
             });
         }
     });
 
-    var $body = $('body, html');
-    $('#home-nav').click(function() {
-        $body.animate({ scrollTop: 0 }, '1500');
+    var jQuerybody = jQuery('body, html');
+    jQuery('#home-nav').click(function() {
+        jQuerybody.animate({ scrollTop: 0 }, '1500');
     });
 
    

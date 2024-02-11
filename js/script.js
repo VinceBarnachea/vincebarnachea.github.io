@@ -11,8 +11,9 @@ jQuery( window ).on("load", function() {
     });
     setTimeout(function(){
         jQuery('.loader-container').css({
-            'display':'none'
+            'top':'-100%'
         });
+        jQuery('.loading-text').text('Loading Complete!');
         jQuery('html').css({
             'overflow':'auto'
         });
@@ -35,7 +36,7 @@ jQuery( window ).on("load", function() {
         setTimeout(function () {
 
             jQuery('.front-my-image').css({
-                'height': '45%'
+                'height': '25rem'
            });
       
           
@@ -54,14 +55,14 @@ jQuery( window ).on("load", function() {
 
          setTimeout(function () {
             jQuery('.navbar').css({
-                 'top': '0'
+                 'top': '-10%'
             });
          }, 6000);
          
          setTimeout(function () {
 
             jQuery('.front-my-image').css({
-                'height': '100%'
+                'height': '10rem'
            });
       
           
@@ -95,7 +96,7 @@ jQuery( window ).on("load", function() {
      setTimeout(function () {
 
         jQuery('.front-my-image').css({
-            'border-radius': '50%'
+            'border-radius': '25rem'
        });
 
 
@@ -122,6 +123,11 @@ jQuery( window ).on("load", function() {
 
 jQuery(document).ready(function() {
     console.log('Hello Developers!');
+
+    $('#loading-bar').animate({ width: '100%' }, 5000, function () {
+        // Animation complete, you can add additional actions here
+        $(this).text('Loading Complete!');
+    });
 
     jQuery('a[href^="#"]').on('click', function(event) {
         var target = jQuery(jQuery(this).attr('href'));

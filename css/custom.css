@@ -91,7 +91,7 @@ nav {
     left: 0;
     top: -30%;
     right: 0;
-    padding: 1% 5%;
+    padding: 1% 0;
     transition: all 1.5s ease-out;
 }
 

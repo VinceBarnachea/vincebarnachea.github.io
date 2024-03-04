@@ -1,6 +1,6 @@
 jQuery( window ).on("load", function() {
 
-    
+
     var footerHeight = jQuery('.section-eight').outerHeight(true);
     jQuery('.contact-section').css({
         'margin-bottom' : footerHeight
@@ -112,6 +112,9 @@ jQuery( window ).on("load", function() {
 
 jQuery(document).ready(function() {
     console.log('Hello Developers!');
+    
+    var marginLeftPixels = jQuery('.navbar').css('margin-right');
+    jQuery('.navbar-background').css('left','-'+marginLeftPixels);
 
     $('#loading-bar').animate({ width: '100%' }, 5000, function () {
         // Animation complete, you can add additional actions here

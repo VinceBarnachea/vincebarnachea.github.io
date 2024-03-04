@@ -82,6 +82,7 @@ body {
 }
 
 
+
 /* Nav =============================================================================================================================================== */
 
 nav {
@@ -198,7 +199,7 @@ nav .icon-burger .line {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2% 5%;
+    padding: 2% 0;
 }
 
 .smooth-scroll-wrapper {
@@ -222,7 +223,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #ddd;
+    --grid-color: rgba(221,221,221,0.5);
     --paper-color: #fff;
 
     background-color: var(--paper-color);
@@ -241,7 +242,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #595b5a;
+    --grid-color: rgba(89,91,90,0.7);
     --paper-color: var(--darkblue);
 
     background-color: var(--paper-color);
@@ -256,7 +257,7 @@ nav .icon-burger .line {
     width: 25%;
     height: 100%;
     left: -50%;
-    transition: all 1.5s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .front-soc-icon {
@@ -285,7 +286,7 @@ nav .icon-burger .line {
 
 .front-cta-container {
     opacity: 0;
-    transform: translateY(40%);
+    transform: translateY(5rem);
     transition: all 1.3s ease-out;
 }
 
@@ -294,7 +295,7 @@ nav .icon-burger .line {
     font-weight: 100;
     color: var(--black);
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(5rem);
     transition: all 1s ease-out;
 }
 
@@ -312,13 +313,14 @@ nav .icon-burger .line {
 }
 
 .front-my-image {
-    background-image: url(../assets/me4.png);
+    background-image: url(../assets/profile-pic\ \(3\).png);
     background-attachment: fixed;
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+    border-radius: 50%;
     width: 25rem;
-    height: 20rem;
+    height: 25rem;
     top: 50%;
     left: 100%;
     transform: translate(-50%,-50%);
@@ -572,7 +574,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #ddd;
+    --grid-color: rgba(221,221,221,0.5);
     --paper-color: #fff;
 
     background-color: var(--paper-color);
@@ -613,7 +615,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #ddd;
+    --grid-color: rgba(221,221,221,0.5);
     --paper-color: #fff;
 
     background-color: var(--paper-color);
@@ -728,8 +730,8 @@ nav .icon-burger .line {
 
 /* Section Six =============================================================================================================================================== */
 .project-video {
-    aspect-ratio: 4/3;
-    object-fit: cover;
+
+    object-fit: contain;
 }
 
 .section-six {
@@ -841,7 +843,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #ddd;
+    --grid-color: rgba(221,221,221,0.5);
     --paper-color: #fff;
 
     background-color: var(--paper-color);
@@ -861,7 +863,7 @@ nav .icon-burger .line {
     --grid-strength: 1px;
     --grid-dash: 5px;
     --grid-gap: 5px;
-    --grid-color: #ddd;
+    --grid-color: rgba(221,221,221,0.5);
     --paper-color: #fff;
 
     background-color: var(--paper-color);

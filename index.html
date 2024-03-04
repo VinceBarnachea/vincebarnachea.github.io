@@ -31,7 +31,7 @@
 </head>
 
 <header>
-    <nav class="navbar">
+    <nav class="navbar lg:max-w-screen-xl mx-auto">
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <ul class="links">
             <li class="mobile-nav-contact-container ml-0 md:ml-12 active">
@@ -117,7 +117,7 @@
         <div class="section-one-container">
             <h2 class="header-hello text-5xl md:text-6xl lg:text-7xl text-center md:text-right pb-4 md:pb-0">Hello! I'm  <span class = "header-name text-5xl md:text-6xl lg:text-7xl">Vince</span></h2>
             <h2 class="header-tag text-lg md:text-xl lg:text-2xl">Frontend/Wordpress Developer</h2>
-            <div class="front-cta-container w-full md:w-auto flex flex-col md:flex-row gap-8 mt-4">
+            <div class="front-cta-container w-full md:w-auto flex flex-col md:flex-row gap-4 mt-4">
                 <a href="#contact">
                     <button class="px-10 py-2 w-full front-cta-primary text-white">
                         Contact Me
@@ -150,7 +150,7 @@
             <div class="about-header-container flex justify-center items-center">
                 <h2 class="white-main-header text-white mb-8 relative text-3xl md:text-3xl lg:text-4xl">About Me<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
             </div>
-            <div class="about-contents-container flex flex-col max-w-none lg:max-w-screen-lg justify-center items-end">
+            <div class="about-contents-container flex flex-col max-w-none lg:max-w-screen-xl justify-center items-end">
                 <p data-aos="fade-up" class="aos-init text-sm md:text-base text-white pb-4 leading-loose">Hello! I'm John Vincent Barnachea, a graduate of BSIT major in System Development at PHINMA-University of Pangasinan. I'm a passionate developer who never stops learning new things, and I have almost 2 years of work experience in WordPress development.</p>
                 <p data-aos="fade-up"  data-aos-duration="3000" class="aos-init text-sm md:text-base text-white leading-loose">On October 2020, I was assigned as Operations Team Manager at Google Developer Student Club PHINMA UPang. Powered by Google Developers, it is a group of students from PHINMA University of Pangasinan whose aim is to bridge the gap between theory and practical application for student developers. Alongside the 1,266+ other GDSC chapters in 106 countries around the world, it is part of a global community supported by Google Developers. GDSC PHINMA UPang is also the only university-wide organization in PHINMA UPang that is officially recognized by Google. This community that I started has successfully organized multiple events to help aspiring developers get to know and learn about the different Google developer technologies available to them.</p>
             </div>
@@ -163,7 +163,7 @@
             <span class = "absolute bottom-0 right-0 w-2/3 h-1 bg-blue"></span></span>
         </div>
 
-        <div class="skills-containers max-w-none lg:max-w-screen-lg gap-16 lg:gap-8 w-full">
+        <div class="skills-containers max-w-none lg:max-w-screen-xl gap-16 lg:gap-8 w-full">
             
             <div class="skills-wrapper h-full w-full aos-init" data-aos="fade-right" data-aos-duration="1000">
                 <div class="skills-row flex flex-col items-center justify-center md:py-8 md:px-8 py-4 px-4">
@@ -288,16 +288,15 @@
 
 
     <section class="section-four" id="projects">
-        <div class="section-four-container w-full h-full flex flex-col items-center justify-start">
+        <div class="section-four-container lg:max-w-screen-xl h-full flex flex-col items-center justify-start">
             <h2 class="black-main-header black-text mb-8 md:mb-16 relative text-3xl md:text-3xl lg:text-4xl">Projects <span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
 
             <div class = "grid grid-cols-1 lg:grid-cols-4 gap-8">
                     <!-- <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted>
-                                    <source src="assets/travel.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-500 ease-in-out" loop muted>
+                                    <source src="assets/travel.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Some Project Websites</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -315,11 +314,10 @@
                     </div> -->
 
                     <!-- <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted preload="none">
-                                    <source src="assets/card.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-500 ease-in-out" loop muted preload="none">
+                                    <source src="assets/card.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Card Game Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -336,11 +334,10 @@
 
                     </div>
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted>
-                                    <source src="assets/travel.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
+                                    <source src="assets/travel.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Travel Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -358,11 +355,10 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted>
-                                    <source src="assets/port.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
+                                    <source src="assets/port.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Business Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -379,11 +375,10 @@
 
                     </div>
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted>
-                                    <source src="assets/portfolio.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
+                                    <source src="assets/portfolio.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Portfolio Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -400,11 +395,10 @@
 
                     </div>
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video" loop muted>
-                                    <source src="assets/harbour.mp4">
-                                </video>
+                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
+                                    <source src="assets/harbour.mp4">2                                </video>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Space Estate Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
@@ -421,9 +415,14 @@
 
                     </div>
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <img class = "project-video" src="assets/portal.png" alt="" srcset="">
+                                <div class="relative">
+                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-300 ease-in-out" src="assets/portal.png" alt="" srcset="">
+                                    <a href="">
+                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-300 ease-in-out">View Project</button>
+                                    </a>
+                                </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Employee Portal Website</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Employee Portal, our internship project, is designed to create a comprehensive platform showcasing employee attendance records and generating salary payslips</p>
@@ -441,12 +440,18 @@
                        
                     </div> -->
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <img class = "project-video" src="assets/sanfabian-app.png" alt="" srcset="">
+                                <div class="relative">
+                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/placeholder.webp" alt="" srcset="">
+                                    <a target="_blank" href="https://github.com/VinceBarnachea/Employee-Portal-Wordpress">
+                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
+                                    </a>
+                                </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Employee Attendance and Payroll System (Under Development)</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">The Employee Attendance and Payroll System WordPress website simplifies workforce management by seamlessly tracking attendance, automating payroll calculations, and providing insightful reports for efficient and transparent business operations.</p>
+                                    <p class="black-text text-sm certificate-des pb-0">he Employee Attendance and Payroll System for WordPress simplifies workforce management by tracking attendance, automating payroll, and generating insightful reports for efficient business operations</p>
+                                    
                                     <div class="pt-4 flex flex-wrap gap-2">
                                         <span class="border-solid border-black border-1 rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Wordpress</span>
                                         <span class="border-solid border-black border-1 rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">MySQL</span>
@@ -462,9 +467,14 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <img class = "project-video" src="assets/sanfabian-app.png" alt="" srcset="">
+                                <div class="relative">
+                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/sanfabian-app.png" alt="" srcset="">
+                                    <a target="_blank" href="https://github.com/thecodeplayer/SAN-FABIAN-ANDROID">
+                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
+                                    </a>
+                                </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">San Fabian App</h6>
                                     <p class="black-text text-sm certificate-des pb-0">The San Fabian app, our Android Capstone Project, guides tourists in exploring San Fabian through a user-friendly Android application.</p>
@@ -480,9 +490,14 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <img class = "project-video" src="assets/ams.png" alt="" srcset="">
+                                <div class="relative">
+                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/ams.png" alt="" srcset="">
+                                    <a href="https://github.com/VinceBarnachea/AttendanceMonitoringSystem-VS">
+                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
+                                    </a>
+                                </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Attendance Monitoring System (Windows Application)</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Our school project, the Attendance Monitoring System, efficiently tracks students' time in and time out, providing a reflective overview of their attendance.</p>
@@ -497,9 +512,14 @@
                     </div>
    
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
                             <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <img class = "project-video" src="assets/sanfabian-web.png" alt="" srcset="">
+                                <div class="relative">
+                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/sanfabian-web.png" alt="" srcset="">
+                                    <a href="https://github.com/thecodeplayer/SAN-FABIAN-WEB">
+                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
+                                    </a>
+                                </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">San Fabian Web</h6>
                                     <p class="black-text text-sm certificate-des pb-0">Introducing the San Fabian web version for an enhanced online experience.</p>
@@ -525,7 +545,7 @@
             <h2 class="black-main-header relative text-3xl md:text-3xl lg:text-4xl mb-10">Resume<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
             
 
-            <div class="work-experience-container max-w-none lg:max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full">
+            <div class="work-experience-container max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full">
                 <div class="flex exp-col-left justify-between md:justify-end items-center" data-aos="fade-up" data-aos-duration="4000">
                     <span class="text-xl font-bold black-text text-right md:text-right">Experience</span>
                     <a class = "md:hidden block" href="assets/JOHN VINCENT BARNACHEA RESUME.pdf" target="_blank">
@@ -600,9 +620,9 @@
             </div>
 
 
-            <div class="educational-attainment-container max-w-none lg:max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full pt-12">
+            <div class="educational-attainment-container max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full pt-12">
                 <div class="flex exp-col-left justify-between md:justify-end items-center" data-aos="fade-left" data-aos-duration="4000">
-                    <span class="text-xl fotext-base md:nt-bold black-text text-left md:text-right">Educational Attainment</span>
+                    <span class="md:text-xl text-base font-bold black-text text-left md:text-right">Educational Attainment</span>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
                     <div class="work-exp w-full flex flex-col items-start justify-start">
@@ -672,64 +692,64 @@
     </section>
 
     <section class="section-seven" id="certificates">
-        <div class="section-seven-container w-full h-full flex flex-col items-center justify-start ">
+        <div class="section-seven-container lg:max-w-screen-xl h-full flex flex-col items-center justify-start ">
             <h2 class="black-main-header mb-8 md:mb-16  relative text-3xl md:text-3xl lg:text-4xl">Certificates & Awards<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></h2>
             
-            <div class="certificates-list-container grid grid-cols-1 lg:grid-cols-4 gap-8">
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+            <div class="certificates-list-container md:columns-4 columns-1 gap-8">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/GDGPH2020Certificate_page-0001.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Google Developer Groud - Devfest 2020</h6>
                             <p class="black-text text-sm certificate-des pb-0">DevFest Philippines is a 2-day online event that brings together experts in Artificial Intelligence, Android, Web, and Cloud technologies for sessions, workshops, and showcases.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/COC-Barnachea_John_page-0001.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">A2 Design Lab Internship COC</h6>
                             <p class="black-text text-sm certificate-des pb-0">During my internship at A2 Design Lab, dedicated 500 hours to learning and exploring real-world applications.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/GDSC.png" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Google Developer Student Club Core Team Member</h6>
                             <p class="black-text text-sm certificate-des pb-0">Proudly served as a core team member of the Google Developer Student Club, contributing to innovation and community engagement.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Study Jam#1 - Useful tools that can help you in your project</h6>
                             <p class="black-text text-sm certificate-des pb-0">Explored valuable project tools in Study Jam#1, enhancing project efficiency and skills.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.png" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Developer Student Club</h6>
                             <p class="black-text text-sm certificate-des pb-0">Dive into the Developer Student Club world with Study Jam#1, your gateway to a transformative introduction</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1_1.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Study Jam#1 - Introduction to Fetch API</h6>
                             <p class="black-text text-sm certificate-des pb-0">Unlock the power of data retrieval with Study Jam#1, an introduction to the Fetch API.</p>
                         </div>
@@ -737,100 +757,100 @@
                 </div>
 
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/dsc citesc.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">DSC PHINMA-UPang COA</h6>
                             <p class="black-text text-sm certificate-des pb-0">Gratefully received a Certificate of Appreciation from DSC PHINMA-UPang for dedicated contributions and commitment.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Kinobi.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Kinobi Resume Workshop COP</h6>
                             <p class="black-text text-sm certificate-des pb-0">Proudly earned a Certificate of Participation from the Kinobi Resume Workshop, enhancing professional skills and resume-building expertise.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/CODING.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Techno Olympics 2020 Coding Competition</h6>
                             <p class="black-text text-sm certificate-des pb-0">Participated in the Techno Olympics 2020 Coding Competition, showcasing coding prowess and problem-solving skills.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Jobseekers Guide.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Bagosphere Jobseeker's Guide</h6>
                             <p class="black-text text-sm certificate-des pb-0">Dive into success with the Bagosphere Jobseeker's Guide, your key to navigating the job market.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Flutter.png" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Funky Flutter Workshop</h6>
                             <p class="black-text text-sm certificate-des pb-0">Immersed in creativity at the Funky Flutter Workshop, exploring the vibrant world of Flutter development.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/firebase.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Firebase in Action Webinar</h6>
                             <p class="black-text text-sm certificate-des pb-0">Engaged in the Firebase in Action Webinar, gaining insights into the practical application of Firebase technology.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/MS.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Software Development Management with MS Project</h6>
                             <p class="black-text text-sm certificate-des pb-0">Mastered Software Development Management using MS Project for effective project planning and execution.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Photography.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Intro to Photography and Videography: A beginners guide</h6>
                             <p class="black-text text-sm certificate-des pb-0">Dive into the world of visual storytelling with 'Intro to Photography and Videography: A beginners guide,' your gateway to creative expression.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group mb-8  h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/SEMINAR.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Developing Android with Kotlin 1</h6>
                             <p class="black-text text-sm certificate-des pb-0">Embarked on the journey of Developing Android with Kotlin 1, mastering the essentials of mobile app creation.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="certificate-container h-full" data-aos="fade-up" data-aos-duration="4000">
+                <div class="certificate-container break-inside-avoid group h-full" data-aos="fade-up" data-aos-duration="4000">
                     <div class="certificate-wrapper pt-4 pb-4 px-4 flex flex-col justify-start items-start">
                         <img class = "w-full object-contain cert-image" src="Cert/Study Jam1.jpg" alt="" srcset="">
-                        <div class="certificate-name-container w-full flex flex-col items-start justify-center">
+                        <div class="certificate-name-container w-full flex2flex-col items-start justify-center">
                             <h6 class="black-text text-base font-semibold py-2 certificate-name">Certificate of Recognition Completing Level 2 Requirements</h6>
                             <p class="black-text text-sm certificate-des pb-0">Honored to receive a Certificate of Recognition for successfully completing Level 2 requirements.</p>
                         </div>
@@ -842,14 +862,14 @@
         </div>
     </section>
     <div class = "contact-section" id="contact">
-        <div class="contact-form-contaiiner lg:max-w-screen-lg mx-auto">
+        <div class="contact-form-contaiiner lg:max-w-screen-md w-full">
             <div class="contact-form-header-container flex flex-col justify-center items-center">
                 <span class="black-main-header relative text-3xl md:text-3xl lg:text-4xl">Contact Me <span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span>
                 <p class="contect-form-par pt-8 md:pt-4 text-sm md:text-base black-text text-center">Feel free to reach out using the form below for collaboration inquiries, service questions, or just to say hello. I look forward to connecting with you!</p>
             </div>
             <form id = "contact-form" action="#">    
                 <div class="contact-forms bg-white shadow-xl px-3 py-3 mt-3 md:px-8 md:py-8 md:mt-8">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-12 pt-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-8 pt-8">
                         <div class="name-field relative">
                             <label class = "text-sm md:text-base cfNameLabel" for="cfName">Name</label>
                             <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-base md:px-4 md:py-2.5" type="text" name="getName" id="cfName" placeholder="Name" autocomplete="off"/>
@@ -862,13 +882,13 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 pt-8">
+                    <!-- <div class="grid grid-cols-1 pt-8">
                         <div class="subject-field relative">
                             <label class = "text-sm md:text-base cfSubjectLabel" for="cfSubject">Subject</label>
                             <input class = "form-inputs shadow-md w-full px-4 py-2 text-sm md:text-base md:px-4 md:py-2.5" type="text" name="getsubject" id="cfSubject" placeholder="Subject" autocomplete="off"/>
                             <span class="text-sm error-text">Subject can't be blank</span>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="grid grid-cols-1 pt-8">
                         <div class="message-field relative">
@@ -880,7 +900,18 @@
 
                     <div class="grid grid-cols-1 pt-8">
                         <div class="submit w-full flex justify-center items-center">
-                            <input class = "submit-btn py-2 px-10 text-white text-base bg-darkblue shadow-md" type="submit" value="Submit">
+                            <button class = "group submit-btn gap-2 py-2 px-10 text-white text-base bg-darkblue shadow-md flex justify-center items-center" type="submit">
+                                Submit
+                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                <lord-icon class = "submit-icon max-w-0 opacity-0 transition-all duration-500 ease-in-out  group-hover:opacity-100 group-hover:max-w-[20rem]"
+                                    src="https://cdn.lordicon.com/aycieyht.json"
+                                    trigger="loop-on-hover"
+                                    state="loop-flying"
+                                    target=".submit-btn"
+                                    colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:35px;height:35px">
+                                </lord-icon>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -889,7 +920,7 @@
         </form>
     </div>
     <footer class="section-eight">
-        <div class="section-eight-container pt-3 md:pt-0">
+        <div class="section-eight-container pt-3 md:pt-0 mx-auto lg:max-w-screen-xl">
             <div class="grid grid-cols-12 md:gap-0 gap-4 contact-row">
                 <div class="col-span-12 md:col-span-4 contact-col">
                     <h6 class="gmail-header black-text text-base md:text-lg">Email Me</h6>
@@ -953,7 +984,7 @@
                 SecureToken: '457b9f22-9064-4cda-b4a6-a606168b0668',
                 To : 'barnacheatolentino@gmail.com',
                 From : 'barnacheajohnvincent48@gmail.com',
-                Subject : cfSubject.value,
+                Subject : 'New Email from Portfolio!',
                 Body : bodyMessage
             }).then(
             message => {
@@ -997,7 +1028,7 @@
 
             checkInputs();
 
-            if(!cfName.classList.contains('error') && !cfEmail.classList.contains('error') && !cfSubject.classList.contains('error') && !cfMessage.classList.contains('error')){
+            if(!cfName.classList.contains('error') && !cfEmail.classList.contains('error') &&  !cfMessage.classList.contains('error')){
                 sendEmail();
                 form.reset();
                 return false;

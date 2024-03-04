@@ -31,7 +31,7 @@ jQuery( window ).on("load", function() {
            jQuery('.navbar').css({
                 'top': '0'
            });
-        }, 6000);
+        }, 7800);
 
         setTimeout(function () {
 
@@ -78,7 +78,7 @@ jQuery( window ).on("load", function() {
         });
         
       
-     }, 6070);
+     }, 7000);
 
      setTimeout(function () {
 
@@ -88,20 +88,9 @@ jQuery( window ).on("load", function() {
         });
   
       
-     }, 7000);
+     }, 7800);
 
 
-    
-
-     setTimeout(function () {
-
-        jQuery('.front-my-image').css({
-            'border-radius': '25rem'
-       });
-
-
-      
-     }, 7200);
 
      setTimeout(function () {
 
@@ -139,7 +128,7 @@ jQuery(document).ready(function() {
           }, 1000);
         }
       });
-
+      
 
     jQuery(".form-inputs").focus(function() {
         // Add has-value class to the label
@@ -166,6 +155,29 @@ jQuery(document).ready(function() {
         jQuery('video', this).get(0).pause();
     }
 
+
+    // var paragraph = $('.certificate-des');
+    // var readMoreBtn = $('.read-more-btn');
+    // var words = paragraph.text().split(' ');
+
+    // // Display only the first 10 words
+    // paragraph.text(words.slice(0, 10).join(' '));
+
+    // // Show "Read More" button if there are more than 10 words
+    // if (words.length > 10) {
+    //   readMoreBtn.show();
+    // }
+
+    // // Toggle between displaying full paragraph and truncated version
+    // readMoreBtn.click(function() {
+    //   if (paragraph.css('overflow') === 'hidden') {
+    //     paragraph.css({ overflow: 'visible', whiteSpace: 'normal' });
+    //     readMoreBtn.text('Read Less');
+    //   } else {
+    //     paragraph.css({ overflow: 'hidden', whiteSpace: 'normal' });
+    //     readMoreBtn.text('Read More');
+    //   }
+    // });
 
 
     // Calculate the total height of the document

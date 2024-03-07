@@ -55,9 +55,9 @@ jQuery( window ).on("load", function() {
 
          setTimeout(function () {
             jQuery('.navbar').css({
-                 'top': '-10%'
+                 'top': '0'
             });
-         }, 6000);
+         }, 8000);
          
          setTimeout(function () {
 
@@ -113,6 +113,56 @@ jQuery( window ).on("load", function() {
 jQuery(document).ready(function() {
     console.log('Hello Developers!');
     
+    jQuery('.burger-container').click(function(){
+        jQuery('.navbar').toggleClass('show-slide');
+        if($('.navbar').hasClass('show-slide')){
+            jQuery('.burger-line').css({
+                'background' : '#fff'
+            });
+			setTimeout(() => {
+				$('.links').css({
+					'animation':'slideLeft 0.5s ease-in-out 1 forwards',
+				});
+			}, 400);
+			setTimeout(() => {
+				$('.navbar-background').css({
+					'animation':'slideDown 0.3s ease-in-out 1 forwards',
+				});
+			}, 0);
+		}else{
+			setTimeout(() => {
+				$('.links').css({
+					'animation':'slideRight 0.5s ease-in-out 1 forwards',
+				});
+			}, 0);
+			setTimeout(() => {
+				$('.navbar-background').css({
+					'animation':'slideUp 0.5s ease-in-out 1 forwards',
+				});
+			}, 400);
+		}
+    });
+
+    if($(window).width()<768){
+		jQuery('.header-links').click(function(){
+			jQuery('.navbar').removeClass('show-slide');
+                setTimeout(() => {
+                    $('.links').css({
+                        'animation':'slideRight 0.5s ease-in-out 1 forwards',
+                    });
+                }, 0);
+                setTimeout(() => {
+                    $('.navbar-background').css({
+                        'animation':'slideUp 0.5s ease-in-out 1 forwards',
+                    });
+                }, 400);
+		});
+	}
+
+
+
+
+
     var marginLeftPixels = jQuery('.navbar').css('margin-right');
     jQuery('.navbar-background').css('left','-'+marginLeftPixels);
 
@@ -222,9 +272,12 @@ jQuery(document).ready(function() {
 
        
         if(scrollTop > jQuery('.section-two').offset().top - (jQuery(window).height()/3)){
-            jQuery('.navbar-background').css({
-                'top' : 0
-            });
+            if($(window).width()>768){
+                jQuery('.navbar-background').css({
+                    'top' : 0
+                });
+            }
+
             jQuery('.header-cta').css({
                 'color' : '#ffffff',
                 'background': '#00003b'
@@ -254,14 +307,23 @@ jQuery(document).ready(function() {
             jQuery('.navbar-background').css({
                 'top' : '-'+100+'%'
             });
-            jQuery('.header-cta').css({
-                'color' : '#111113',
-                'background': 'transparent'
-            });
+            if($(window).width()>768){
+                jQuery('.header-cta').css({
+                    'color' : '#111113',
+                    'background': 'transparent'
+                });
+            }else{
+                jQuery('.header-cta').css({
+                    'color' : '#111113',
+                    'background': 'transparent'
+                });
+            }
+
             jQuery('.header-cta').removeClass('px-8 py-2');
         }
 
         if(scrollTop > jQuery('.section-six').offset().top - (jQuery(window).height()/1.1)){
+            console.log('Triggered');
             jQuery('.section-one').css({
                 'display':'none'
             });
@@ -273,16 +335,32 @@ jQuery(document).ready(function() {
             var windowHeight = jQuerywindow.height();
             var totalHeight = jQuerysections.length * windowHeight;
 
-            var scrollPercentage = ((jQuerywindow.scrollTop() / totalHeight) * 100)-500;
-            jQuery('#never').css({
-                'right' : scrollPercentage +'%'
-            });
-            jQuery('#stop').css({
-                'left' : scrollPercentage +'%'
-            });
-            jQuery('#learning').css({
-                'right' : scrollPercentage +'%'
-            });
+            if($(window).width()>1024){
+                var scrollPercentage = ((jQuerywindow.scrollTop() / totalHeight) * 100)-100;
+                console.log(scrollPercentage);
+                jQuery('#never').css({
+                    'transform' : "translateX("+scrollPercentage +'px)'
+                });
+                jQuery('#stop').css({
+                    'transform' : "translateX(-"+scrollPercentage +'px)'
+                });
+                jQuery('#learning').css({
+                    'transform' : "translateX("+scrollPercentage +'px)'
+                });
+            }else{
+                var scrollPercentage = ((jQuerywindow.scrollTop() / totalHeight) * 100)-800;
+                console.log(scrollPercentage);
+                jQuery('#never').css({
+                    'transform' : "translateX("+scrollPercentage +'px)'
+                });
+                jQuery('#stop').css({
+                    'transform' : "translateX(-"+scrollPercentage +'px)'
+                });
+                jQuery('#learning').css({
+                    'transform' : "translateX("+scrollPercentage +'px)'
+                });
+            }
+            
         }
         else{
             jQuery('.section-one').css({
@@ -292,7 +370,52 @@ jQuery(document).ready(function() {
                 'display':'hidden'
             });
         }
+
+
+        if(scrollTop > jQuery('.section-three').offset().top){
+            jQuery('.burger-line').css({
+                'background' : '#00003b'
+            });
+            jQuery('.navbar-background').css({
+                'top' : '0'
+            });
+            jQuery('.burger-container').click(function(){
+                if($('.navbar').hasClass('show-slide')){
+                    jQuery('.burger-line').css({
+                        'background' : '#fff'
+                    });
+                }else{
+                    jQuery('.burger-line').css({
+                        'background' : '#00003b'
+                    });
+                }
+            });
+        }else{
+            jQuery('.burger-line').css({
+                'background' : '#fff'
+            });
+            jQuery('.navbar-background').css({
+                'top' : '-100%'
+            });
+            jQuery('.burger-container').click(function(){
+                if($('.navbar').hasClass('show-slide')){
+                    jQuery('.burger-line').css({
+                        'background' : '#fff'
+                    });
+                }else{
+                    jQuery('.burger-line').css({
+                        'background' : '#fff'
+                    });
+                }
+            });
+        }
+
+
     });
+
+
+
+    
 
     var jQuerybody = jQuery('body, html');
     jQuery('#home-nav').click(function() {
@@ -300,4 +423,7 @@ jQuery(document).ready(function() {
     });
 
    
+
+
+
 });

@@ -8,23 +8,26 @@
 
 @layer utilities {
     .black-text {
-        color: #111113 !important;
+        color: #111113;
+    }
+    .bg-black{
+        background: #111113;
     }
 
     .bg-darkblue {
-        background: #00003b !important;
+        background: #00003b;
     }
 
     .bg-blue {
-        background: #9086f6 !important;
+        background: #9086f6;
     }
 
     .border-1 {
-        border-width: 1px !important;
+        border-width: 1px;
     }
 
     .border-black {
-        border-color: #111113 !important;
+        border-color: #111113;
     }
 }
 
@@ -101,12 +104,10 @@ nav {
     left: 0;
     top: -100%;
     transition: all 0.3s ease-in-out;
-    box-shadow: 5px 10px 45px 3px rgb(0 0 0 / 7%);
 }
 
 .header-cta {
     border-radius: 5px;
-    color: var(--black);
     transition: all 0.3s ease-in-out;
 }
 
@@ -121,7 +122,7 @@ nav {
     border: 1px solid var(--darkblue);
 }
 
-nav .links {
+/* nav .links {
     float: right;
     display: flex;
     justify-content: end;
@@ -132,7 +133,7 @@ nav .links {
     min-width: 50%;
     position: relative;
     z-index: 30;
-}
+} */
 
 nav .links li {
     list-style: none;
@@ -142,21 +143,12 @@ nav .links li.active a {
     font-weight: bold;
 }
 
-nav .links a,
-.header-line {
-    text-decoration: none;
-    color: var(--black);
 
-    font-weight: bold;
-    font-size: 1rem;
-    font-weight: 100;
-    /* filter: drop-shadow(-2px 0 2px white); */
-}
 
-nav .links a:hover,
+/* nav .links a:hover,
 .header-line:hover {
     color: var(--cyan);
-}
+} */
 
 #nav-toggle {
     position: absolute;
@@ -772,7 +764,7 @@ nav .icon-burger .line {
     line-height: 17rem;
     font-weight: 400;
     -webkit-text-stroke: 4px var(--white);
-    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
 }
 
 #never {
@@ -900,6 +892,7 @@ nav .icon-burger .line {
 
 .submit-btn {
     border-radius: 5px;
+    background: var(--darkblue)!important;
 }
 
 .submit-btn:hover{
@@ -916,7 +909,6 @@ nav .icon-burger .line {
 
 .gmail-header,
 .get-in-touch-header {
-    color: var(--white);
     text-align: center;
 }
 
@@ -959,7 +951,6 @@ nav .icon-burger .line {
 }
 
 .gmail-address {
-    color: white;
     margin: 0 0 0 10px;
 }
 
@@ -990,7 +981,6 @@ nav .icon-burger .line {
 }
 
 .all-rights-reserved {
-    color: var(--white);
     font-size: 0.9rem;
 }
 
@@ -1074,8 +1064,13 @@ nav .icon-burger .line {
     .skills-containers {
         columns: 1;
     }
-
-    nav .links {
+    .section-six-header{
+        -webkit-text-stroke: 1px var(--white);
+    }
+    .section-six-header:hover{
+        -webkit-text-stroke: 1px var(--white);
+    }
+    /* nav .links {
         float: none;
         position: fixed;
         z-index: 9;
@@ -1150,14 +1145,7 @@ nav .icon-burger .line {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .nav-residential,
-    .nav-office,
-    .nav-retail {
-        border: none;
-        padding: 0;
-    }
+    } */
 
     .front-black {
         left: 0;
@@ -1312,6 +1300,51 @@ nav .icon-burger .line {
     }
   }
   
+  .show-slide .burger-container .burger-line:nth-child(1){
+        transform: translateY(6px) rotate(225deg);
+    }
+    .show-slide .burger-container .burger-line:nth-child(2){
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    .show-slide .burger-container .burger-line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
   
-  
-   
+   @keyframes slideDown {
+        0%{
+       
+            height:100%;
+        }   
+        100%{
+       
+            height: 100vh;
+        }
+   }
+
+   @keyframes slideUp {
+        0%{
+            height: 100vh;
+        }
+        100%{
+            height:100%;
+        }
+    }
+
+    @keyframes slideLeft {
+        0%{
+            left:100%;
+        }
+        100%{
+            left: 0;
+        }
+    }
+
+    @keyframes slideRight {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100%;
+        }
+    }

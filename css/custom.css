@@ -756,11 +756,11 @@ nav .icon-burger .line {
 }
 
 .section-six-header {
-    font-family: 'Arial';
+    font-family: fantasy;
     font-weight: 400;
     -webkit-text-fill-color: transparent;
     font-size: 20rem;
-    line-height: 17rem;
+
     font-weight: 400;
     -webkit-text-stroke: 4px var(--white);
     -webkit-transition: all 0.1s ease-in-out;
@@ -780,8 +780,8 @@ nav .icon-burger .line {
 
 .section-six-header:hover {
     font-weight: 400;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 4px var(--white);
+    -webkit-text-fill-color: #FCDC2A;
+    -webkit-text-stroke: 4px #FCDC2A;
 }
 
 /* Section Seven =============================================================================================================================================== */
@@ -1352,12 +1352,11 @@ nav .icon-burger .line {
         content: "";
         position: absolute;
         display: flex;
-        height: 70%;
-        width: 70%;
+        height: 13px;
+        width: 13px;
         top: 50%;
         background: var(--darkblue);
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 100%;
-    }
     }

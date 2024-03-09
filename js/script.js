@@ -428,7 +428,7 @@ jQuery(document).ready(function() {
     
 
     var jQuerybody = jQuery('body, html');
-    jQuery('#home-nav').click(function() {
+    jQuery('#home-nav, .header-logo').click(function() {
         jQuerybody.animate({ scrollTop: 0 }, '1500');
     });
 

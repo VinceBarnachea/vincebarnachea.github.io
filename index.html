@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VinceBarnachea | Portfolio</title>
-
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <!-- CDN -->
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -31,55 +31,61 @@
 </head>
 
 <header>
-    <nav class="navbar lg:max-w-screen-xl flex items-center justify-end mx-auto fixed z-[30] px-[5%] py-[5%] left-0 right-0 md:py-[1%] md:px-0 transition-all duration-[1500ms] ease-in-out md:block">
-        <ul class="links float-right fixed bg-darkblue w-full flex flex-col justify-center gap-[2rem] top-0 left-[100%] md:left-0 md:bg-transparent items-center py-0 px-0 my-0 mx-0 h-full md:gap-0 md:justify-end md:flex-row md:min-w-[50%] md:relative z-[30] transition-all duration-400 ease-in-out">
-            <li class="mobile-nav-contact-container ml-0 md:ml-12 active">
-                <div class="mobile-nav-contact">
-                    <a href="#home" id="home-nav" class="header-links text-base text-white md:text-black">Home</a>
-                </div>
-            </li>
+    <nav class="navbar flex items-center justify-end mx-auto fixed z-[30] px-[5%] py-[5%] left-0 right-0 md:py-[1%] md:px-[5%] transition-all duration-[1500ms] ease-in-out md:block">
+        <div class="lg:max-w-screen-xl md:mx-auto flex items-center justify-beween">
+            <img class = "header-logo w-[2.5rem] h-[2.5rem] object-contain relative z-50 hover:cursor-pointer" src="assets/logo.png" alt="" srcset="">
 
-            <li class="mobile-nav-contact-container ml-0 md:ml-12">
-                <div class="mobile-nav-contact">
-                    <a href="#about" class="header-links text-base text-white md:text-black">About</a>
-                </div>
-            </li>
-
-            <li class="mobile-nav-contact-container ml-0 md:ml-12">
-                <div class="mobile-nav-contact">
-                    <a href="#skills" class="header-links text-base text-white md:text-black">Skills</a>
-                </div>
-            </li>
-            <li class="mobile-nav-contact-container ml-0 md:ml-12">
-                <div class="mobile-nav-contact">
-                    <a href="#projects" class="header-links text-base text-white md:text-black">Projects</a>
-                </div>
-            </li>
-            <li class="mobile-nav-contact-container ml-0 md:ml-12">
-                <div class="mobile-nav-contact">
-                    <a href="#resume" class="header-links text-base text-white md:text-black">Resume</a>
-                </div>
-            </li>
-            <li class="mobile-nav-contact-container cert ml-0 md:ml-12">
-                <div class="mobile-nav-contact">
-                    <a href="#certificates" class="header-links text-base text-white md:text-black">Certificates</a>
-                </div>
-            </li>
-
-            <div class="mob-contact">
-                <a href="#contact" class="flex w-max">
-                    <div class="header-cta ml-0 md:ml-12 header-links text-base text-white md:text-black">
-                        Contact Me
+            <ul class="links fixed bg-darkblue w-full flex flex-col justify-center gap-[2rem] top-0 left-[100%] md:left-0 md:bg-transparent items-center py-0 px-0 my-0 mx-0 h-full md:gap-0 md:justify-end md:flex-row md:relative z-[30] transition-all duration-400 ease-in-out">
+                <li class="mobile-nav-contact-container ml-0 md:ml-12 active">
+                    <div class="mobile-nav-contact">
+                        <a href="#home" id="home-nav" class="header-links text-base text-white md:text-black">Home</a>
                     </div>
-                </a>
-            </div>
-
-            <div class="nav-hr-container">
-                <div class="nav-hr"></div>
-            </div>
-
-
-        </ul>
+                </li>
+    
+                <li class="mobile-nav-contact-container ml-0 md:ml-12">
+                    <div class="mobile-nav-contact">
+                        <a href="#about" class="header-links text-base text-white md:text-black">About</a>
+                    </div>
+                </li>
+    
+                
+                <li class="mobile-nav-contact-container ml-0 md:ml-12">
+                    <div class="mobile-nav-contact">
+                        <a href="#projects" class="header-links text-base text-white md:text-black">Projects</a>
+                    </div>
+                </li>
+                <li class="mobile-nav-contact-container ml-0 md:ml-12">
+                    <div class="mobile-nav-contact">
+                        <a href="#resume" class="header-links text-base text-white md:text-black">Resume</a>
+                    </div>
+                </li>
+                <li class="mobile-nav-contact-container ml-0 md:ml-12">
+                    <div class="mobile-nav-contact">
+                        <a href="#skills" class="header-links text-base text-white md:text-black">Skills</a>
+                    </div>
+                </li>
+                <li class="mobile-nav-contact-container cert ml-0 md:ml-12">
+                    <div class="mobile-nav-contact">
+                        <a href="#certificates" class="header-links text-base text-white md:text-black">Certificates</a>
+                    </div>
+                </li>
+    
+                <div class="mob-contact">
+                    <a href="#contact" class="flex w-max">
+                        <div class="header-cta ml-0 md:ml-12 header-links text-base text-white md:text-black">
+                            Contact Me
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="nav-hr-container">
+                    <div class="nav-hr"></div>
+                </div>
+    
+    
+            </ul>
+        </div>
+        
         <div class="burger-container relative z-[9999] h-6 w-7 flex flex-col justify-around items-center md:hidden">
             <div class="burger-line h-[3px] w-full bg-white transition-all duration-700 ease-in-out"></div>
             <div class="burger-line h-[3px] w-full bg-white transition-all duration-700 ease-in-out"></div>
@@ -106,7 +112,8 @@
         <div class="loader-loading absolute h-full w-full flex items-center justify-center">
             <span class="loading-text text-white text-xl font-bold md:text-3xl text-center relative top-20">Loading</span>
         </div>
-        <div class="loader-credits-container absolute bottom-4 w-full flex justify-center">
+        <div class="loader-credits-container absolute bottom-4 w-full flex justify-center items-center flex-col">
+            <img class = "h-[3rem] w-[3rem] object-contain mb-[4px]" src="assets/logo.png" alt="" srcset="">
             <span class="all-rights-reserved text-xs md:text-sm text-center text-white">John Vincent Barnachea<br>Website Portfolio 2024</span>
         </div>
     </div>
@@ -181,166 +188,19 @@
         <div class="section-four-container lg:max-w-screen-xl h-full flex flex-col items-center justify-start">
             <h2 class="black-main-header black-text mb-8 md:mb-16 relative text-3xl md:text-3xl lg:text-4xl">Projects <span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
 
-            <div class = "grid grid-cols-1 lg:grid-cols-4 gap-8">
-                    <!-- <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-500 ease-in-out" loop muted>
-                                    <source src="assets/travel.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Some Project Websites</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> -->
-
-                    <!-- <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-500 ease-in-out" loop muted preload="none">
-                                    <source src="assets/card.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Card Game Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
-                                    <source src="assets/travel.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Travel Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-  
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
-                                    <source src="assets/port.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Business Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
-                                    <source src="assets/portfolio.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Portfolio Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <video class = "project-video group-hover:blur-[3px] group-hover:brightness-75 transform-all duration-300 ease-in-out" loop muted>
-                                    <source src="assets/harbour.mp4">2                                </video>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Space Estate Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Unable to provide a description due to the constraints of a Non-Disclosure Agreement (NDA).</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
-                        <div class="certificate-container break-inside-avoid group  h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
-                                <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-300 ease-in-out" src="assets/portal.png" alt="" srcset="">
-                                    <a href="">
-                                        <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-300 ease-in-out">View Project</button>
-                                    </a>
-                                </div>
-                                <div class="certificate-name-container w-full flex flex-col items-start justify-center">
-                                    <h6 class="black-text text-base font-semibold py-2 certificate-name">Employee Portal Website</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">Employee Portal, our internship project, is designed to create a comprehensive platform showcasing employee attendance records and generating salary payslips</p>
-                                    <div class="pt-4 flex flex-wrap gap-2">
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">PHP</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">JQuery</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Bootstrap</span>
-                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div> -->
+            <div class = "grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
                         <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
+                            <div class="certificate-wrappers group pt-0 pb-0 px-0 flex flex-col justify-start items-start bg-transparent">
                                 <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/placeholder.webp" alt="" srcset="">
+                                    <img class = "project-video aspect-[4/3] object-cover group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/placeholder.webp" alt="" srcset="">
                                     <a target="_blank" href="https://github.com/VinceBarnachea/Employee-Portal-Wordpress">
                                         <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
                                     </a>
                                 </div>
                                 <div class="certificate-name-container w-full flex flex-col items-start justify-center">
                                     <h6 class="black-text text-base font-semibold py-2 certificate-name">Employee Attendance and Payroll System (Under Development)</h6>
-                                    <p class="black-text text-sm certificate-des pb-0">he Employee Attendance and Payroll System for WordPress simplifies workforce management by tracking attendance, automating payroll, and generating insightful reports for efficient business operations</p>
+                                    <p class="black-text text-sm certificate-des pb-0">The Employee Attendance and Payroll System for WordPress simplifies workforce management by tracking attendance, automating payroll, and generating insightful reports for efficient business operations</p>
                                     
                                     <div class="pt-4 flex flex-wrap gap-2">
                                         <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Wordpress</span>
@@ -358,9 +218,9 @@
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
                         <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
+                            <div class="certificate-wrappers group pt-0 pb-0 px-0 flex flex-col justify-start items-start bg-transparent">
                                 <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/ams.png" alt="" srcset="">
+                                    <img class = "bg-[#e1e1e1] project-video aspect-[4/3] object-contain group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/ams2.png" alt="" srcset="">
                                     <a href="https://github.com/VinceBarnachea/AttendanceMonitoringSystem-VS">
                                         <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
                                     </a>
@@ -380,9 +240,9 @@
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
                         <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
+                            <div class="certificate-wrappers group pt-0 pb-0 px-0 flex flex-col justify-start items-start bg-transparent">
                                 <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/sanfabian-app.png" alt="" srcset="">
+                                    <img class = "bg-[#e1e1e1] project-video aspect-[4/3] object-contain group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/sanfabian-app mock.png" alt="" srcset="">
                                     <a target="_blank" href="https://github.com/thecodeplayer/SAN-FABIAN-ANDROID">
                                         <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
                                     </a>
@@ -403,9 +263,9 @@
    
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
                         <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
+                            <div class="certificate-wrappers group pt-0 pb-0 px-0 flex flex-col justify-start items-start bg-transparent">
                                 <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/sanfabian-web.png" alt="" srcset="">
+                                    <img class = "bg-[#e1e1e1] project-video aspect-[4/3] object-contain group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/SANFABIAN WEB.png" alt="" srcset="">
                                     <a href="https://github.com/thecodeplayer/SAN-FABIAN-WEB">
                                         <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
                                     </a>
@@ -418,6 +278,7 @@
                                         <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Javascript</span>
                                         <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">HTML</span>
                                         <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">CSS</span>
+                                        <span class="border-solid border-black border-[1px] rounded-full py-0.5 px-4 text-sm md:text-base md:px-5">Localhost</span>
                                     </div>
                                 </div>
                             </div>
@@ -427,9 +288,9 @@
 
                     <div data-aos="fade-up" data-aos-duration="4000" class="certificates-list-container video">
                         <div class="certificate-container break-inside-avoid h-full" data-aos="fade-up" data-aos-duration="4000">
-                            <div class="certificate-wrappers group pt-4 pb-4 px-0 flex flex-col justify-start items-start bg-transparent">
+                            <div class="certificate-wrappers group pt-0 pb-0 px-0 flex flex-col justify-start items-start bg-transparent">
                                 <div class="relative">
-                                    <img class = "project-video group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/placeholder.webp" alt="" srcset="">
+                                    <img class = "bg-[#e1e1e1] project-video aspect-[4/3] object-contain group-hover:blur-[2px] group-hover:brightness-75 transform-all duration-500 ease-in-out" src="assets/currency.png" alt="" srcset="">
                                     <a target="_blank" href="https://github.com/VinceBarnachea/Simple-Currency-Converter">
                                         <button class="opacity-0 group-hover:opacity-100 text-white text-nowrap py-2 px-8 border-white border-[1px] rounded top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] absolute transform-all duration-500 ease-in-out">View Project</button>
                                     </a>
@@ -458,8 +319,8 @@
             <h2 class="black-main-header relative text-3xl md:text-3xl lg:text-4xl mb-10">My Timeline<span class = "absolute bottom-0 right-0 w-1/3 h-1 bg-blue"></span></span></h2>
             
 
-            <div class="work-experience-container relative max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full">
-                <div class="absolute left-[50%] w-[1px] translate-x-[-50%] h-full bg-black"></div>
+            <div class="work-experience-container relative max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 pl-[2rem] md:pl-0 md:gap-y-12 md:gap-x-36 w-full">
+                <div class="absolute left-0 md:left-[50%] w-[1px] translate-x-[-50%] h-full bg-black"></div>
                 <div class="flex exp-col-left justify-between md:justify-end items-center" data-aos="fade-up" data-aos-duration="4000">
                     <span class="text-xl font-bold black-text text-right md:text-right">Experience</span>
                     <a class = "md:hidden block" href="assets/JOHN VINCENT BARNACHEA RESUME.pdf" target="_blank">
@@ -483,7 +344,8 @@
                     <div class="timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute right-[-4.5rem] top-[3px] translate-x-[0.65rem]"></div>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                         <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>Apr 2022 - Present</span>
                         <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">A2 Design Lab</h2>
                         <span class="black-text text-base pb-0 md:pb-1">Junior Web Developer</span>
@@ -497,7 +359,8 @@
                     <div class="timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute right-[-4.5rem] top-[3px] translate-x-[0.65rem]"></div>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                         <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>Jan 2022 - Apr 2022</span>
                         <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">A2 Design Lab (Internship)</h2>
                         <span class="black-text text-base pb-0 md:pb-1">Web Developer Trainee</span>
@@ -511,7 +374,8 @@
                     <div class="timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute right-[-4.5rem] top-[3px] translate-x-[0.65rem]"></div>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                         <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>Aug 2020 - Apr 2021</span>
                         <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">Google Developer Student Clubs</h2>
                         <span class="black-text text-base pb-0 md:pb-1">Operations Team Manager</span>
@@ -525,7 +389,8 @@
                     <div class="timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute right-[-4.5rem] top-[3px] translate-x-[0.65rem]"></div>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                         <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>Dec 2017 - Apr 2018</span>
                         <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">College of Information Technology Department</h2>
                         <span class="black-text text-base pb-0 md:pb-1">Senior High School Internship</span>
@@ -538,13 +403,14 @@
             </div>
 
 
-            <div class="educational-attainment-container relative max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 md:gap-y-12 md:gap-x-36 w-full pt-12">
-                <div class="absolute left-[50%] w-[1px] translate-x-[-50%] top-0 h-full bg-black"></div>
+            <div class="educational-attainment-container relative max-w-none lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 pl-[2rem] md:pl-0 md:gap-y-12 md:gap-x-36 w-full pt-12">
+                <div class="absolute left-0 md:left-[50%] w-[1px] translate-x-[-50%] top-0 h-full bg-black"></div>
                 <div class="flex exp-col-left justify-between md:justify-end items-center" data-aos="fade-left" data-aos-duration="4000">
                     <span class="md:text-xl text-xl font-bold black-text text-left md:text-right">Educational Attainment</span>
                 </div>
                 <div class="hidden exp-col-right md:flex" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                        
                     </div>
                 </div>
@@ -554,50 +420,14 @@
                     <div class="timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute top-[3px] right-[-4.5rem] translate-x-[0.65rem]"></div>
                 </div>
                 <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
+                    <div class="work-exp relative w-full flex flex-col items-start justify-start">
+                        <div class="md:hidden block timeline-dot h-[20px] w-[20px] border-[1px] border-black rounded-full bg-white absolute left-[0] top-[3px] translate-x-[-2.6rem]"></div>
                         <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>June 2018 - June 2022</span>
                         <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">BS INFORMATION TECHNOLOGY</h2>
                         <span class="black-text text-base pb-0 md:pb-1">Major In System Development</span>
                         <span class="black-text text-[12px] pb-3 md:pb-0 md:text-base pb-1 flex items-center"><i class="fa-solid fa-location-dot flex items-center pr-2"></i>PHINMA - University of Pangasinan</span>
                     </div>
                 </div>
-
-                <!-- <div class="hidden md:flex exp-col-left justify-start md:justify-end" data-aos="fade-left" data-aos-duration="4000">
-                    <span class="text-base md:text-lg black-text text-left md:text-right">June 2016 - March 2018</span>
-                </div>
-                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
-                        <span class="text-base md:text-lg black-text text-left md:text-right flex md:hidden flex items-center"><i class="pr-2 flex items-center fa-regular fa-calendar"></i>June 2016 - March 2018</span>
-                        <h2 class="black-text font-bold text-lg md:text-xl pb-[0.25rem] md:pb-4">SENIOR HIGH SCHOOL</h2>
-                        <span class="black-text text-base pb-0 md:pb-1">Techincal Vocational Livelihood(TVL) - ICT</span>
-                        <span class="black-text text-[12px] pb-3 md:pb-0 md:text-base pb-1 flex items-center"><i class="fa-solid fa-location-dot flex items-center pr-2"></i>PHINMA - University of Pangasinan</span>
-                    </div>
-                </div>
-
-                <div class="hidden md:flex exp-col-left justify-start md:justify-end" data-aos="fade-left" data-aos-duration="4000">
-                    <span class="text-base md:text-lg black-text text-left md:text-right">June 2012 - March 2016</span>
-                </div>
-                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
-                        <span class="text-base md:text-lg black-text text-lefpb-[0.25rem] md:t md:text-right flex md:hidden">June 2012 - March 2016</span>
-                        <h2 class="black-text font-bold pb-0 md:text-lg md:text-xl pb-4">JUNIOR HIGH SCHOOL</h2>
-                        <span class="black-text text-[12px] pb-3 md:pb-0 md:text-base pb-1 flex items-center"><i class="fa-solid fa-location-dot flex items-center pr-2"></i>Benigno V. Aldana National High School</span>
-                    </div>
-                </div>
-
-                <div class="hidden md:flex exp-col-left justify-start md:justify-end" data-aos="fade-left" data-aos-duration="4000">
-                    <span class="text-base md:text-lg black-text text-left md:text-right">June 2006 - March 2012</span>
-                </div>
-                <div class="flex exp-col-right" data-aos="fade-right" data-aos-duration="4000">
-                    <div class="work-exp w-full flex flex-col items-start justify-start">
-                        <span class="text-base md:text-lg black-text text-lefpb-[0.25rem] md:t md:text-right flex md:hidden">June 2006 - March 2012</span>
-                        <h2 class="black-text font-bold pb-0 md:text-lg md:text-xl pb-4">ELEMENTARY GRADE</h2>
-                        <span class="black-text text-[12px] pb-3 md:pb-0 md:text-base pb-1 flex items-center"><i class="fa-solid fa-location-dot flex items-center pr-2"></i>Malasin Elementary Pangasinan</span>
-                    </div>
-                </div> -->
-                
-
-
             </div>
             
         </div>
@@ -976,13 +806,14 @@
                     <a style="text-decoration: none;" href="mailto:barnacheatolentino@gmail.com">
                         <div class="gmail-address-container">
                             <i class="fa-regular fa-envelope gmail-icon black-text text-lg lg:text-lg"></i>
-                            <span class="gmail-address text-sm md:text-base black-text">barnacheatolentino@gmail.com</span>
+                            <span class="gmail-address text-sm md:text-base font-semibold black-text">barnacheatolentino@gmail.com</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-span-12 md:col-span-4 contact-col">
-                    <div class="all-rights-container">
-                        <span class="all-rights-reserved text-xs md:text-base text-center black-text">John Vincent Barnachea<br>Website Portfolio 2024</span>
+                    <div class="all-rights-container flex-col">
+                        <img class = "h-[2rem] w-[2rem] object-contain mb-[4px]" src="assets/logo.png" alt="" srcset="">
+                        <span class="all-rights-reserved text-xs md:text-xs text-center black-text">John Vincent Barnachea<br>Website Portfolio 2024</span>
                     </div>
                 </div>
                 <div class="col-span-12 md:col-span-4 contact-col ">

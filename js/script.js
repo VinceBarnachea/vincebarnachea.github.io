@@ -177,7 +177,7 @@ jQuery(document).ready(function() {
         if (target.length) {
           event.preventDefault();
           jQuery('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 50
           }, 1000);
         }
       });
@@ -259,9 +259,27 @@ jQuery(document).ready(function() {
             $('#about').css({
                 'background-position': 'center -'+scrollTop/3.1+'px'
             });
+            $('.section-one').css({
+                'background-position': 'center -'+scrollTop/3.1+'px'
+            });
+            $('.section-four,.section-five,.section-three').css({
+                'background-position': 'center -'+scrollTop/7.1+'px'
+            });
+            $('.contact-section,.section-seven,.section-eight').css({
+                'background-position': 'center -'+scrollTop/20.1+'px'
+            });
         }else{
             $('#about').css({
                 'background-position': 'center -'+scrollTop/10.1+'px'
+            });
+            $('.section-one').css({
+                'background-position': 'center -'+scrollTop/3.1+'px'
+            });
+            $('.section-four,.section-five,.section-three').css({
+                'background-position': 'center -'+scrollTop/7.1+'px'
+            });
+            $('.contact-section,.section-seven,.section-eight').css({
+                'background-position': 'center -'+scrollTop/20.1+'px'
             });
         }
 
@@ -425,7 +443,29 @@ jQuery(document).ready(function() {
 
 
 
-    
+    $('.footer-icon-soc').mouseover(function(){
+        $('.footer-icon-soc').css({
+            'background':'transparent',
+        })
+        $('.footer-icon-soc .fa-brands').css({
+            'color':'#111113 ',
+        })
+        $(this).css({
+            'background':'#00003b'
+        })
+        $(this).find('.fa-brands').css({
+            'color':'#fff',
+        })
+    });
+
+    $('.footer-icon-soc').mouseout(function(){
+        $('.footer-icon-soc').css({
+            'background':'#00003b'
+        })
+        $('.footer-icon-soc .fa-brands').css({
+            'color':'#fff ',
+        })
+    });
 
     var jQuerybody = jQuery('body, html');
     jQuery('#home-nav, .header-logo').click(function() {

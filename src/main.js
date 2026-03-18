@@ -23,8 +23,6 @@
 // // setupCounter(document.querySelector('#counter'))
 import $ from "jquery";
 
-
-
 // Make jQuery global (important!)
 window.$ = window.jQuery = $;
 import("owl.carousel");
@@ -47,14 +45,12 @@ gsap.registerPlugin(
   SplitText,
 );
 
-
 // Make jQuery global BEFORE loading Owl
-
 
 // Now load Owl (it will attach to window.jQuery)
 // import "owl.carousel";
 
-$(function() {
+$(function () {
   console.log("Hello Devs! My Portfolio Revamp is WIP :)");
 
   var headerHeight = $(".header-main").outerHeight(true);
@@ -86,33 +82,54 @@ $(function() {
     });
   });
 
-    let isHeaderButtonToggled = false;
+  let isHeaderButtonToggled = false;
 
-const $body = $("body");
+  const $body = $("body");
 
-const burgerMenuTL = gsap.timeline({
-  paused: true,
-  defaults: { duration: 0.3, ease: "back.out(2)" }
-});
+  if ($(window).width() < 1025) {
+    const burgerMenuTL = gsap.timeline({
+      paused: true,
+      defaults: { duration: 0.3, ease: "back.out(2)" },
+    });
 
-burgerMenuTL
-  .to(".brg-1", { y: 8 })
-  .to(".brg-3", { y: -8 }, "<")
-  .to(".brg-2", { autoAlpha: 0, scaleX: 0 }, "<")
-  .to(".brg-1", { rotation: 45 })
-  .to(".brg-3", { rotation: -45 }, "<");
+    const headerMenuTL = gsap.timeline({
+      paused: true,
+      defaults: { duration: 0.4, ease: "power2.out" },
+    });
 
-$(".burger-container").on("click", function () {
-  isHeaderButtonToggled = !isHeaderButtonToggled;
+    burgerMenuTL
+      .to(".brg-1", { y: 8 })
+      .to(".brg-3", { y: -8 }, "<")
+      .to(".brg-2", { autoAlpha: 0, scaleX: 0 }, "<")
+      .to(".brg-1", { rotation: 45 })
+      .to(".brg-3", { rotation: -45 }, "<");
 
-  if (isHeaderButtonToggled) {
-    burgerMenuTL.play();
-    $body.css("overflow", "hidden");
-  } else {
-    burgerMenuTL.reverse();
-    $body.css("overflow", "auto");
+    headerMenuTL.fromTo(
+      ".nav-menu",
+      {
+        y: "-100%",
+        backgroundColor: "#16302bcc",
+      },
+      {
+        y: 0,
+        backgroundColor: "#16302bcc",
+      },
+    );
+
+    $(".burger-container").on("click", function () {
+      isHeaderButtonToggled = !isHeaderButtonToggled;
+
+      if (isHeaderButtonToggled) {
+        burgerMenuTL.play();
+        headerMenuTL.play();
+        $body.css("overflow", "hidden");
+      } else {
+        headerMenuTL.reverse();
+        burgerMenuTL.reverse();
+        $body.css("overflow", "auto");
+      }
+    });
   }
-});
 
   $(".landingcta-secondary").on("click", function () {
     gsap.to(window, {
@@ -131,42 +148,42 @@ $(".burger-container").on("click", function () {
   });
 
   const $cursorFlwr = $(".cursor-flwr");
-const $cursorPntr = $(".cursor-pntr");
+  const $cursorPntr = $(".cursor-pntr");
 
-let mouseX = 0;
-let mouseY = 0;
-let rafId = null;
+  let mouseX = 0;
+  let mouseY = 0;
+  let rafId = null;
 
-function updateCursor() {
-  const transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  function updateCursor() {
+    const transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
-  $cursorFlwr.css("transform", transform);
-  $cursorPntr.css("transform", transform);
+    $cursorFlwr.css("transform", transform);
+    $cursorPntr.css("transform", transform);
 
-  rafId = null;
-}
-
-$(window).on("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-
-  if (!rafId) {
-    rafId = requestAnimationFrame(updateCursor);
+    rafId = null;
   }
-});
 
-$(document).on("click", () => {
-  $cursorFlwr.addClass("expand");
+  $(window).on("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 
-  setTimeout(() => {
-    $cursorFlwr.removeClass("expand");
-  }, 180);
-});
+    if (!rafId) {
+      rafId = requestAnimationFrame(updateCursor);
+    }
+  });
 
-$(".hvr-crsr").hover(
-  () => $cursorFlwr.addClass("hovered"),
-  () => $cursorFlwr.removeClass("hovered")
-);
+  $(document).on("click", () => {
+    $cursorFlwr.addClass("expand");
+
+    setTimeout(() => {
+      $cursorFlwr.removeClass("expand");
+    }, 180);
+  });
+
+  $(".hvr-crsr").hover(
+    () => $cursorFlwr.addClass("hovered"),
+    () => $cursorFlwr.removeClass("hovered"),
+  );
 
   $(".proj-cta-bg").hover(
     function () {
@@ -348,11 +365,10 @@ $(".hvr-crsr").hover(
     },
   });
 
-  projectsTL
-    .to(".projects-row", {
-      x: "-" + totalWidthProj + "px",
-      ease: "none",
-    });
+  projectsTL.to(".projects-row", {
+    x: "-" + totalWidthProj + "px",
+    ease: "none",
+  });
 
   var totalCards = $(".projects-card").length;
   $(".projects-card").each(function (index, element) {
@@ -488,7 +504,7 @@ $(".hvr-crsr").hover(
     scrollTrigger: {
       trigger: ".skills-section",
       start: "top bottom",
-      end: () => "+=" + slideSVGLength *svgSpeed,
+      end: () => "+=" + slideSVGLength * svgSpeed,
       scrub: true,
     },
   });
@@ -589,7 +605,6 @@ $(".hvr-crsr").hover(
   //   animateText();
   // }, 30000);
 
-
   $("#vinceForm").on("submit", function (e) {
     e.preventDefault();
 
@@ -624,9 +639,6 @@ $(".hvr-crsr").hover(
       prevWidth = newWidth; // update for next check
     }, 100);
   });
-
-
-
 }); //End ng Ready Function
 
 let resizeTimer;
@@ -643,12 +655,18 @@ $(window).on("resize", function () {
   }, 100);
 });
 
-var servicesH = new SplitText('.landing1st, .landing2nd',
-            {type: "lines,words,chars"}
-        );
+var servicesH = new SplitText(".landing1st, .landing2nd", {
+  type: "lines,words,chars",
+});
 
 const landing1st = ["John Vincent", "Website", "Hello", "Web", "Design"];
-const landing2nd = ["Barnachea", "Portfolio", "World", "Developer", "to Reality"];
+const landing2nd = [
+  "Barnachea",
+  "Portfolio",
+  "World",
+  "Developer",
+  "to Reality",
+];
 
 function cycleText($el, words, hold) {
   // ScrollTrigger.refresh();
@@ -661,13 +679,13 @@ function cycleText($el, words, hold) {
     $el.text(words[index]);
 
     // IMPORTANT: pass DOM element, not jQuery object
-    split = new SplitText($el[0], {type:"lines,words,chars"});
+    split = new SplitText($el[0], { type: "lines,words,chars" });
 
     gsap.fromTo(
       split.chars,
       {
         y: 300,
-        autoAlpha: 0
+        autoAlpha: 0,
       },
       {
         y: 0,
@@ -687,10 +705,10 @@ function cycleText($el, words, hold) {
               split.revert();
               index = (index + 1) % words.length;
               animate();
-            }
+            },
           });
-        }
-      }
+        },
+      },
     );
     // ScrollTrigger.refresh();
   }
